@@ -1,22 +1,21 @@
-# DAY  - Creating Yoer Own Server - with Digital Ocean
+# DAY  - Creating Your Own Server - with Digital Ocean
 
 ## INTRO
-First, you need a server. You can't really learn about administering a remote Linux server without having a tame one of your own - so today we're going to buy one.
+First, you need a server. You can't really learn about administering a remote Linux server without having a one of your own - so today we're going to buy one!
 
-Through the magic of Linux and virtualisation, it's now possible to get a small Internet server setup alomost instantly - and at very low cost. Technically, what you'll be doing is creating and renting a VPS  ("Virtual Private Server"). In a datacentre somewhere a single physical server running Linux will be split into a dozen or more Virtual server using the KVM (Kernel-based Virtual Machine) feature that's been part of Linux since early 2007. There are many hundreds of hosting companied offering lowcost VPS deals - and sites like http://lowendbox.com/ that compare them.
+Through the magic of Linux and virtualisation, it's now possible to get a small Internet server setup almost instantly - and at very low cost. Technically, what you'll be doing is creating and renting a VPS  ("Virtual Private Server"). In a datacentre somewhere a single physical server running Linux will be split into a dozen or more Virtual servers using the KVM (Kernel-based Virtual Machine) feature that's been part of Linux since early 2007. There are many hundreds of hosting companied offering low cost VPS deals - and sites like http://lowendbox.com/ that compare them.
 
-As well as a hosting provider, we also need to choose which "flavour" of Linux to install on our server. If you're new to Linux then the range of "distributions" available can be confusing - but the latest LTS ("Long Term Support") version of Ubuntu Server is a reasonable choice. 
+As well as a hosting provider, we also need to choose which "flavour" of Linux to install on our server. If you're new to Linux then the range of "distributions" available can be confusing - but the latest LTS ("Long Term Support") version of Ubuntu Server is a popular choice. 
  
-These instruction will walk you through using Digital Ocean (http://digitalocean.com) as a provider. They are a latecomer to the business, but are rated highly, with a very simple and slick interface and low cost of $5 (USD) per month for the miniaml server that we'll be creating. Of course, if you have a strong reason to use another provider, then by all means do so - but be sure to choose Ubuntu Server 12.04 (or later realease of it such as 12.04.3).
+These instruction will walk you through using Digital Ocean (http://digitalocean.com) as a provider. They are a latecomer to the business, but are rated highly, with a very simple and slick interface and low cost of $5 (USD) per month for the minimal server that we'll be creating. (Of course, if you have a strong reason to use another provider, then by all means do so - but be sure to choose Ubuntu Server 12.04 - or later realease of it such as 12.04.3)
 
 ## Signing up with Digital Ocean
 Signup is immediated - just provide your email address and a password of your choosing and you're in!
-Follow the "Getting Started" link to provide payment details. Note that if you're not happy giving Digital Ocean you're credit card details then choose the "Pay $5 now via PayPal" option - even if you don't have a PayApl account te nextscreen wioll allow you to make the payment with a VISA, MaterCard or American Exprwss credit card.
-.
+Follow the "Getting Started" link to provide payment details. Note that if you're not happy giving Digital Ocean your credit card details then choose the "Pay $5 now via PayPal" option - even if you don't have a PayPal account the next screen will allow you to make the payment with a VISA, MaterCard or American Exprwss credit card.
 
 
 You now have the IP address for your server which you alone are responsible for administering!
-Your server will be running either Ubuntu or Debian - while these are two distinct "distributions" of Linux, the commaline administration of them is nearly identical. To become a fully-rounded Linux server admin you should become comfortable working with different versions of Linux, but for now Debian/Ubuntu is a good choice. 
+Your server will be running either Ubuntu or Debian - while these are two distinct "distributions" of Linux, the commandline administration of them is nearly identical. To become a fully-rounded Linux server admin you should become comfortable working with different versions of Linux, but for now Debian/Ubuntu is a good choice. 
 
 Once you have reached a level of comfort at the command-line then you'll find your skills transfer not only to all the standard Linux variants, but also to Android, Apple's OSX, OpenBSD, Solaris and IBM AIX. Throughout the course you'll be working on Linux - but in fact most of what is covered is applicable to any system in the "UNIX family" - and the major differences between them are with their graphic user interfaces such as Gnome, Unity, KDE etc - none of which you’ll be using!
 
