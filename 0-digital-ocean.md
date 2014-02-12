@@ -1,7 +1,4 @@
 # DAY  - Creating Yoer Own Server - with Digital Ocean
-need to do more on this...
-
-
 
 ## INTRO
 First, you need a server. You can't really learn about administering a remote Linux server without having a tame one of your own - so today we're going to buy one.
