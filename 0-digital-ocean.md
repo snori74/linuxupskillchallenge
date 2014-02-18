@@ -3,21 +3,21 @@
 ## INTRO
 First, you need a server. You can't really learn about administering a remote Linux server without having a one of your own - so today we're going to buy one!
 
-Through the magic of Linux and virtualisation, it's now possible to get a small Internet server setup almost instantly - and at very low cost. Technically, what you'll be doing is creating and renting a VPS  ("Virtual Private Server"). In a datacentre somewhere a single physical server running Linux will be split into a dozen or more Virtual servers using the KVM (Kernel-based Virtual Machine) feature that's been part of Linux since early 2007. There are many hundreds of hosting companied offering low cost VPS deals - and sites like http://lowendbox.com/ that compare them.
+Through the magic of Linux and virtualisation, it's now possible to get a small Internet server setup almost instantly - and at very low cost. Technically, what you'll be doing is creating and renting a VPS  ("Virtual Private Server"). In a datacentre somewhere a single physical server running Linux will be split into a dozen or more Virtual servers using the KVM (Kernel-based Virtual Machine) feature that's been part of Linux since early 2007. There are many hundreds of hosting companies offering low cost VPS deals - and sites like http://lowendbox.com/ that compare them.
 
 As well as a hosting provider, we also need to choose which "flavour" of Linux to install on our server. If you're new to Linux then the range of "distributions" available can be confusing - but the latest LTS ("Long Term Support") version of Ubuntu Server is a popular choice. 
  
-These instruction will walk you through using Digital Ocean (http://digitalocean.com) as a provider. They are a latecomer to the business, but are rated highly, with a very simple and slick interface and low cost of $5 (USD) per month for the minimal server that we'll be creating. (Of course, if you have a strong reason to use another provider, then by all means do so - but be sure to choose Ubuntu Server 12.04 - or later realease of it such as 12.04.3)
+These instruction will walk you through using Digital Ocean (http://digitalocean.com) as your VPS hosting provider. They are a latecomer to the business, but are rated highly, with a very simple and slick interface - and low cost of $5 (USD) per month for the minimal server that we'll be creating. (Of course, if you have a strong reason to use another provider, then by all means do so but be sure to choose Ubuntu Server 12.04 - or later sub-release of it such as 12.04.3)
 
 ## Signing up with Digital Ocean
-Signup is immediated - just provide your email address and a password of your choosing and you're in!
+Signup is immediate - just provide your email address and a password of your choosing and you're in!
 Follow the "Getting Started" link to provide payment details. Note that if you're not happy giving Digital Ocean your credit card details then choose the "Pay $5 now via PayPal" option - even if you don't have a PayPal account the next screen will allow you to make the payment with a VISA, MaterCard or American Exprwss credit card.
 
 
 You now have the IP address for your server which you alone are responsible for administering!
-Your server will be running either Ubuntu or Debian - while these are two distinct "distributions" of Linux, the commandline administration of them is nearly identical. To become a fully-rounded Linux server admin you should become comfortable working with different versions of Linux, but for now Debian/Ubuntu is a good choice. 
+Your server will be running Ubuntu Server. The administration of this is done from the command-line only. 
 
-Once you have reached a level of comfort at the command-line then you'll find your skills transfer not only to all the standard Linux variants, but also to Android, Apple's OSX, OpenBSD, Solaris and IBM AIX. Throughout the course you'll be working on Linux - but in fact most of what is covered is applicable to any system in the "UNIX family" - and the major differences between them are with their graphic user interfaces such as Gnome, Unity, KDE etc - none of which you’ll be using!
+Once you have reached a level of comfort at the command-line then you'll find your skills transfer not only to all the standard Linux variants, but also to Android, Apple's OSX, OpenBSD, Solaris and IBM AIX. Throughout the course you'll be working on the Linux, specifically Ubuntu Server, but in fact most of what is covered is applicable to any Linux - the major differences between them are with their graphic user interfaces such as Gnome, Unity, KDE etc - none of which you’ll be using!
 
 ## YOUR TASKS TODAY:
 
@@ -39,9 +39,9 @@ For example:
 
 On an OSX machine you'll normally access the command line via Terminal.app - it's in the Utilities sub-folder of Applications. On Linux distributions with a menu you'll typically find it under "Applications menu -> Accessories -> Terminal", "Applications menu -> System -> Terminal" or "Menu -> System -> Terminal Program (Konsole)"- or you can simply search for your terminal application.
 
-On Microsoft Windows there is no suitable client built-in, or available from Microsoft - so the "standard" is a free program called PuTTy. It is written and maintained by Simon Tatham, so get it directly from his site at: http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html You can download and install the full suite with "Windows installer" version. If you don't have permission to install software on the computer you are using then you can run PUTTY.exe directly from its download page without installing it. There are other SSH clients, and any should be suitable for the course.
+On Microsoft Windows there is no suitable client built-in, or available from Microsoft - so the "standard" is a free program called PuTTy. It is written and maintained by Simon Tatham, so get it directly from his site at: http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html You can download and install the full suite with the"Windows installer" version. If you don't have permission to install software on the computer you are using then you can run PUTTY.exe directly from its download page without installing it. Finally, if you use the Chrome browser, you can install the "Secure Shell" extension. There are in fact many other SSH clients, and any should be suitable for the course.
 
-The first time you connect to your server, you’ll receive a warning that you're connecting to a new server - and be asked if you wish to "cache the host key". Do this. Now, if you get a warning in future connections it means that either: (a) you are being fooled into connecting to a different machine or (b) someone may be trying a "man in the middle" attack.
+The first time you connect to your server, you’ll receive a warning that you're connecting to a new server - and be asked if you wish to "cache the host key". Do this now, but if you get a similar warning in future connections it means that either: (a) you are being fooled into connecting to a different machine or (b) someone may be trying a "man in the middle" attack.
 
 So, now login to your server with the provided login details - and remember that Linux is case-sensitive regarding user names, as well as passwords.
 
