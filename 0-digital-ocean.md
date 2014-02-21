@@ -7,11 +7,11 @@ Through the magic of Linux and virtualisation, it's now possible to get a small 
 
 As well as a hosting provider, we also need to choose which "flavour" of Linux to install on our server. If you're new to Linux then the range of "distributions" available can be confusing - but the latest LTS ("Long Term Support") version of Ubuntu Server is a popular choice. 
  
-These instruction will walk you through using Digital Ocean (http://digitalocean.com) as your VPS hosting provider. They are a latecomer to the business, but are rated highly, with a very simple and slick interface - and low cost of $5 (USD) per month for the minimal server that we'll be creating. (Of course, if you have a strong reason to use another provider, then by all means do so but be sure to choose Ubuntu Server 12.04 - or later sub-release of it such as 12.04.3)
+These instruction will walk you through using Digital Ocean (http://digitalocean.com) as your VPS hosting provider. They are a latecomer to the business, but are rated highly, with a very simple and slick interface - and low cost of $5 (USD) per month for the minimal server that you'll be creating. (Of course, if you have a strong reason to use another provider, then by all means do so, but be sure to choose Ubuntu Server 12.04 - or later sub-release of it such as 12.04.3)
 
 ## Signing up with Digital Ocean
 Signup is immediate - just provide your email address and a password of your choosing and you're in!
-Follow the "Getting Started" link to provide payment details. Note that if you're not happy giving Digital Ocean your credit card details then choose the "Pay $5 now via PayPal" option - even if you don't have a PayPal account the next screen will allow you to make the payment with a VISA, MaterCard or American Exprwss credit card.
+Follow the "Getting Started" link to provide payment details. Note that if you're not happy giving Digital Ocean your credit card details then choose the "Pay $5 now via PayPal" option - even if you don't have a PayPal account the next screen will allow you to make the payment with a VISA, MaterCard or American Express credit card.
 
 
 You now have the IP address for your server which you alone are responsible for administering!
