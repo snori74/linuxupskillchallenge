@@ -1,5 +1,5 @@
 
-#"Steve's Teeny Tiny Linux Server Course"
+#"Teeny Tiny Linux Server Course"
 
 *Linux Server Administration - for Fun!*
 
