@@ -1,4 +1,4 @@
-# DAY 0 - How 
+# DAY 0 - Your very own "server in the cloud" 
 
 ## INTRO
 First, you need a server. You can't really learn about administering a remote Linux server without having a one of your own - so we've st one up especially for you.
