@@ -4,7 +4,7 @@
 
 You should now have received an email with the address of your brand-new server. This is yours to use during the course - and not shared with anyone else.  You alone will be administering it.
 
-Your server will be running the latest Ubuntu Server LTS (Long Term Support) version. 
+Your server will be running the latest Ubuntu Server LTS (Long Term Support) version.
 
 To become a fully-rounded Linux server admin you should become comfortable working with different versions of Linux, but for now Ubuntu is a good choice.
 
@@ -12,7 +12,7 @@ Once you have reached a level of comfort at the command-line then you'll find yo
 
 ## YOUR TASKS TODAY:
 
-* Connect and login remotely your server 
+* Connect and login remotely your server
 * Run a few simple simple commands to check the status of your servers
 * Change your password
 
@@ -22,7 +22,7 @@ Remote access used to be done by the simple *telnet* protocol, but now the much 
 
 If you're using any Linux or Unix system, including Apple's OS X, then you can simply open up a "terminal" session and use your command-line *ssh* client like this:
 
-	ssh user@<ip address>	 
+	ssh user@<ip address>
 
 For example:
 
@@ -40,11 +40,11 @@ Once logged in, notice that the "command prompt” that you receive ends in  "$"
 
 Try these simple commands:
 
-	ls           	 
-	uptime   	 
-	free       	 
-	df -h      	 
-	uname -a   
+	ls
+	uptime
+	free
+	df -h
+	uname -a
 
 Now use the *passwd* command to change your password. To do this, think of a new, secure password, then simply type *passwd*, press “Enter” and give your current password when prompted, then the new one you've chosen, confirm it  - and then WRITE IT DOWN somewhere.
 
@@ -274,7 +274,7 @@ If you’re a website professional then you might do things slightly differently
 * If you're familiar with configuring web servers, then go crazy, setup some virtual hosts, or add in some mods etc.
 * As with the vast majority of Linux software, Apache keeps its logs under the */var/log* directory - look at the logs in */var/log/apache2* - in the *access.log* file you should be able to see your session from when you browsed to the test page. Notice that there's an overwhelming amount of detail - this is typical, and later you'll see we'll see how to filter out what we want. Notice the *error.log* file too - hopefully this one will be empty!
 
-##Posting your progress
+## Posting your progress
 As usual, practice your text-editing skills, and allow us to judge your progress - but this time do it by editing */var/www/index.html* - so it should be visible on your new website. (It doesn’t have to be pretty!)
 
 ## Security
@@ -298,9 +298,9 @@ Read up on:
 
 
 
-#Day 7 - the infamous "grep"...
+# Day 7 - the infamous "grep"...
 
-##INTRO
+## INTRO
 
 Your server is now running two services: the *sshd* (Secure Shell Daemon) service that you use to login; and the Apache2 web browser. Both of these services are generating logs as you and others access your server - and these are text files which we can analyse using some simple tools.
 
@@ -308,7 +308,7 @@ Plain text files are a key part of "the Unix way" and there are many small "tool
 
 The *grep* command is famous for being extremely powerful and handy, but also because its "nerdy" name is typical of Unix/Linux conventions. The GREP101 course takes its name from this command because it nicely sums up both the power and challenge of working at the command line.
 
-##TASKS
+## TASKS
 * Dump out the complete contents of a file with _cat_ like this: *cat /var/log/apache2/access.log*
 * Use *less* to open the same file, like this: *less /var/log/apache2/access.log* - and move up and down through the file with your arrow keys, then use “q” to quit.
 * Again using *less*, look at a file, but practice confidently moving around using  *gg*, *GG* and */*,  *n* and *p* (to go to the top of the file, bottom of the file, to search for something and to hop to the next "hit" or back to the previous one)
@@ -322,16 +322,16 @@ The *grep* command is famous for being extremely powerful and handy, but also be
 
 The output of any command can be "redirected" to a file with the ">" operator. The command: _ls -ltr > listing.txt_ wouldn't list the directory contents to your screen, but instead redirects it into the file "listing.txt" (creating that file if it didn't exist, or overwriting the contents if it did).
 
-##POSTING YOUR PROGRESS
+## POSTING YOUR PROGRESS
 
 Re-run the command to list all the IP's that have unsuccessfully tried to login to your server as root - but this time, use the the ">" operator to redirect it to the file: _/home/support/feedback/attackers.txt_
 
-##RESOURCES
+## RESOURCES
 
 * Text processing commands (http://www.youtube.com/watch?v=xdiZpPsw7mQ)
 * Drew's grep tutorial (http://www.uccs.edu/~ahitchco/grep/)
 
-##EXTENSION
+## EXTENSION
 
 * See if you can extend your filtering of *auth.log* to select just the IP addresses, then pipe this to  *sort*, and then further to *uniq* to get a list of all those IP addresses that have been "auditing" your server security for you.
 * Investigate the _awk_ and _sed_ commands. When you're having difficulty figuring out how to do something with _grep_ and _cut_, then you may need to step up to using these. Googling for "linux sed tricks" or "awk one liners" will get you many examples.
@@ -571,9 +571,9 @@ Create and edit a file */home/support/feedback/Day10* with your comments on how 
 The "-exec" feature of the "find" command is extremely powerful. Test some examples of this from the RESOURCES links.
 
 
-#DAY 11 - Copying with SFTP
+# DAY 11 - Copying with SFTP
 
-##INTRO
+## INTRO
 
 You've now had a working Internet server of your own for some time, and seen how you can create and edit small files there. You've created a web server where you've been able to edit a simple web page.
 
@@ -583,7 +583,7 @@ Today we'll be looking at how you can move files between your other systems and 
 * Copying up some text to your server to put on your webpage
 * Uploading some photos and logos for your webpage
 
-##PROTOCOLS
+## PROTOCOLS
 
 There are a wide range of ways a Linux server can share files, including:
 
@@ -606,7 +606,7 @@ If you’re successfully logging in via _ssh_ from your home, work or a cybercaf
 
 By contrast, setting up your server for any of the other protocols will require extra work. Not only that, enabling extra protocols also increases the "attack surface" - and there's always a chance that you’ll mis-configure something in a way that allows an attacker in. It's also very likely that restrictive firewall policies at a workplace will interfere with or block these protocols. Finally, while old-style FTP is still very commonly used, it sends login credentials "in clear", so that your flatmates, cafe buddies or employer may be able to grab them off the network by "packet sniffing". Not a big issue with your "classroom" server - but it's an unacceptable risk if you're remotely administering production servers.
 
-##SFTP client software
+## SFTP client software
 
 What’s required to use SFTP is some client software. A command-line client (unsurprisingly called _sftp_) comes standard on every Apple OSX or Linux system. If you're using a Linux desktop, you also have a built-in GUI client via your file manager. This will allow you to easily attach to remote servers via SFTP. (For the Nautilus file manager for example, press ctrl + l to bring up the 'location window" and type: _sftp://username@myserver-address_).
 
@@ -618,7 +618,7 @@ Download locations are under the RESOURCES section.
 
 Configuring and using your choice of these should be straightforward. The only real potential for confusion is that these clients generally support a wide range of protocols such as scp and FTP that we're not going to use. When you're asked for SERVER, give your server's IP address, PORT will be 22, and PROTOCOL will be SFTP or SSH.
 
-##INSTRUCTIONS
+## INSTRUCTIONS
 
 * Configure your chosen SFTP client to login to your server as "support"
 * Copy some files from your server down to your local desktop (try files from your _/home/support_ folder, and from _/var/log_)
@@ -627,20 +627,20 @@ Configuring and using your choice of these should be straightforward. The only r
 
 Once the files are uploaded you can login via _ssh_ and use _sudo_ to give yourself the necessary power to move files about.
 
-##POSTING YOUR PROGRESS
+## POSTING YOUR PROGRESS
 
 * Make sure you've created a _/home/support/images_ folder with some image files in it.
 
-##RESOURCES
+## RESOURCES
 
 * CyberDuck (http://cyberduck.ch/)
 * FileZilla (http://filezilla-project.org/download.php?type=client)
 * Reason to use SFTP over FTP or SCP (http://sysadminspot.com/linux/sftp-vs-ftp-vs-scp-advantages/)
 * sftp File From One Server To Another (http://www.cyberciti.biz/faq/sftp-file-from-server-to-another-in-unix-linux/)
 
-#DAY 12 -  Who has permission?
+# DAY 12 -  Who has permission?
 
-##INTRO
+## INTRO
 
 Files on a Linux system always have associated "permissions" - controlling who has access and what sort of access. You'll have bumped into this in various ways already - as an example, yesterday while logged in as "support" you could not upload files directly into _/var/www_ or create a new folder at _/_.
 
@@ -648,7 +648,7 @@ The Linux permission system is quite simple, but it does have some quirky and su
 
 This time you really _do_ need to work your way through the material in the RESOURCES section!
 
-##OWNERSHIP
+## OWNERSHIP
 
 First let's look at "ownership". All files are tagged with both the name of the user and the group that owns them, so if we type "ls -l" and see a file listing like this:
 
@@ -658,7 +658,7 @@ First let's look at "ownership". All files are tagged with both the name of the 
 
 Showing that all these files are owned by user "steve", and the group "staff".
 
-##PERMISSIONS
+## PERMISSIONS
 
 Looking at the '-rw-r--r--" at the start of a directory listing line, ignore the first "-" for now, and see these as potentially three groups of "rwx": the permission granted to the user who owns the file, the "group",  and "other people".
 
@@ -692,7 +692,7 @@ Do a listing to check the result:
 
 	chmod u+w tuesday.txt
 
-##GROUPS
+## GROUPS
 
 On most modern Linux systems there is a group created for each user, so user "support" is a member of the group "support". However, groups can be added as required, and users added to several groups.
 
@@ -707,18 +707,18 @@ The "root" user can add a user to an existing group with the command:
 
 so your "support" user can do the same simply by prefixing the command with "sudo" - use this to add your support user to the group "root", and then use the "group" command to check that it has worked.
 
-##POSTING YOUR PROGRESS
+## POSTING YOUR PROGRESS
 
 Just for fun, create a file: _secret.txt_ in your home folder, take away all permissions from it for the user, group and others - and see what happens when you try to edit it with _nano_.
 
-##RESOURCES
+## RESOURCES
 
 * http://tldp.org/LDP/intro-linux/html/sect_03_04.html
 * http://catcode.com/teachmod/
 * http://www.trainsignal.com/blog/linux-file-permissions
 * http://www.youtube.com/watch?v=vKTg1ATHl4E
 
-##EXTENSION
+## EXTENSION
 
 * Research _umask_ and test to see how it's setup on your server
 * Research and get familiar with the classic _octal_ mode of describing and setting file permissions. (e.g. _chmod 664 myfile_)
@@ -726,9 +726,9 @@ Just for fun, create a file: _secret.txt_ in your home folder, take away all per
 
 
 
-#Day 13 - Your first staff member...
+# Day 13 - Your first staff member...
 
-##INTRO
+## INTRO
 
 Today you're going to set-up another user on your system. You're going to imagine that this is your first employee, trusted to do just a few simple tasks:
 
@@ -739,7 +739,7 @@ Today you're going to set-up another user on your system. You're going to imagin
 
 You'll be covering a several new areas, so have fun!
 
-##ADDING A USER
+## ADDING A USER
 Choose a name for your new user - we'll use "fred" in the examples, so to add this new user:
 
     sudo adduser fred
@@ -758,7 +758,7 @@ Additionally, _adduser_ will have created a home directory, _/home/fred_ for exa
 
 Login as your new user to confirm that everything works. Now while logged in as this user try to run _reboot_ - then _sudo reboot_.
 
-##CLEVER SUDO TRICKS
+## CLEVER SUDO TRICKS
 Your new user is just an ordinary user and so can't use _sudo_ to run commands with elevated privileges - until we set them up. We could simply add them to a group that's pre-defined to be able to use sudo to do _anything_ as root - but we don't want to give 'fred" quite that amount of power.
 
 Use _ls -l_ to look at the permissions for the file: _/etc/sudoers_  This is where the magic is defined, and you'll see that it's tightly controlled, but you should be able to view it with: _sudo less /etc/sudoers_  You want to add a new entry in there for your new user, and for this you need to run a special utility: _visudo_
@@ -782,31 +782,31 @@ You can add these line in wherever seems reasonable. The _visudo_ command will a
 
 Type *exit* to remove your magic hat and become simple "support" again - and notice that your prompt again becomes: $
 
-##TESTING
+## TESTING
 
 Test by logging in as your test user and typing: _sudo reboot_ 
 
-##POSTING YOUR PROGRESS
+## POSTING YOUR PROGRESS
 
 Send an email to tutor@GREP101.com to let us know how these last two lessons went for you.
 
-##EXTENSION
+## EXTENSION
 If you find this all pretty familiar, then you might like to check and update your knowledge on a couple of related areas:
 
 * Restricting shell access (http://www.cyberciti.biz/tips/howto-linux-shell-restricting-access.html)
 * The history of /etc/passwd and /etc/shadow (http://linuxers.org/article/history-etcpasswd-and-etcshadow-files)
 * Linux user login management (https://www.ibm.com/developerworks/mydeveloperworks/blogs/58e72888-6340-46ac-b488-d31aa4058e9c/entry/the_linux_user_login_management_etc_passwd_and_etc_shadow_files19?lang=en)
 
-##RESOURCES
+## RESOURCES
 
 * Advanced /etc/sudoers examples (http://www.gratisoft.us/sudo/sample.sudoers)
 * A cartoon that should now make sense! (http://xkcd.com/149/ )
 * Basic Linux Permissions: sudo and sudoers (http://www.youtube.com/watch?v=YSSIm0g00m4)   (video)
 
 
-#Day 14 - Editing with _vim_
+# Day 14 - Editing with _vim_
 
-##INTRO
+## INTRO
 
 Simple text files are at the heart of Linux, so editing these is a key sysadmin skill. There are a range of simple editors aimed at beginners such as: _nano_, _pico_, _joe_ or _jed_ . These all look horribly ugly, and as if they were written for DOS back in the 1980's - but are pretty easy to "just figure out".
 
@@ -820,7 +820,7 @@ Very often when you type _vi_, what the system actually starts is _vim_. To see 
 
 to check.
 
-##THE TWO THINGS YOU NEED TO KNOW
+## THE TWO THINGS YOU NEED TO KNOW
 
 * There are two "modes" - with very different behaviours
 * Little or nothing onscreen lets you know which mode you're currently in!
@@ -829,7 +829,7 @@ The two modes are "command mode" and "editing mode", and as a beginner, there is
 
 _"Press Esc twice or more to return to command mode"_
 
-##INSTRUCTIONS
+## INSTRUCTIONS
 
 So, first grab a text file to edit. A copy of _/etc/services_ will do nicely:
 
@@ -874,17 +874,17 @@ This is much as you ever _need_ to learn about _vi_ - but there's an enormous am
 
 One last thing, you may see reference to _"vi versus emacs"_ . This is a long running argument for programmers, not system administrators - _vi/vim_  is what you need to learn.
 
-##POSTING YOUR PROGRESS
+## POSTING YOUR PROGRESS
 
 Create and edit (with vim!) a file: _/home/support/done-with-vim_
 
-##EXTENSION
+## EXTENSION
 If you're already familiar with _vi_ / _vim_ then use today's hour to research and test some customisation via your _~/.vimrc_ file. Here are a couple of useful advanced resources on this:
 
 * http://amix.dk/vim/vimrc.html
 * http://gaveen.owain.org/2009/07/my-vim-configuration.html
 
-##RESOURCES
+## RESOURCES
 
 * Here is why _vim_ uses the _hjkl_ keys as arrow keys (http://www.catonmat.net/blog/why-vim-uses-hjkl-as-arrow-keys/)
 * Graphical vi-vim Cheat Sheet and Tutorial (http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html)
@@ -894,13 +894,13 @@ If you're already familiar with _vi_ / _vim_ then use today's hour to research a
 
 Y 15 - Deeper into repositories...
 
-##INTRO
+## INTRO
 
 Early on you installed some software packages to your server using _apt-get_. That was fairly painless, and we explained how the Linux model of software installation is very similar to how "app stores" work on Android, iPhone, increasingly in Mac OSX - and now Windows 8.
 
 Today however, you'll be looking "under the covers" to see how this works; better understand the advantages (and disadvantages!) - and to see how you can safely extend the system beyond the main official sources.
 
-##REPOSITORIES AND VERSIONS
+## REPOSITORIES AND VERSIONS
 
 Any particular Linux installation has a number of important characteristics:
 
@@ -910,7 +910,7 @@ Any particular Linux installation has a number of important characteristics:
 
 The version number is particularly important because it controls the versions of application that you can install. When Ubuntu 9.04 was released (in April 2009 - hence the version number!), it came out with Apache 2.2.11. So, if your server runs 9.04, then even if you installed Apache with _apt-get_ five years later that is still the version you would receive. This provides stability, but at an obvious cost for web designers who hanker after some feature which later versions provide. (Security patches _are_ made to the repositories, but by "backporting" security fixes from later versions into the old stable version that was first shipped).
 
-##WHERE IS ALL THIS SETUP?
+## WHERE IS ALL THIS SETUP?
 
 We'll be discussing the "package manager" used by the Debian and Ubuntu distributions, and dozens of derivatives. This uses the _apt-get_ command, but for most purposes the competing _yum_ command used by Fedora, RHEL, CentOS and Scientific Linux works in a very similar way - as do the equivalent utilities in  other versions.
 
@@ -920,7 +920,7 @@ The configuration is done with files under the _/etc/apt_ directory, and to see 
 
 There's no need to be concerned with the exact syntax of this for now, but what’s fairly common is to want to add extra repositories - and this is what we'll deal with next.
 
-##EXTRA REPOSITORIES
+## EXTRA REPOSITORIES
 
 While there's an amazing amount of software available in the "standard" repositories (more than 3,000 for CentOS and ten times that number for Ubuntu), there are often packages not available - typically for one of two reasons:
 
@@ -929,7 +929,7 @@ While there's an amazing amount of software available in the "standard" reposito
 
 So, next you’ll adding an extra repository to your system, and install software from it.
 
-##ENABLING EXTRA REPOSITORIES 
+## ENABLING EXTRA REPOSITORIES 
 
 First do a quick check to see how many packages you *could* already install. You can get the full list and details by running:
 
@@ -958,7 +958,7 @@ After adding this, update your local cache of available applications:
 
 Once done, try again to install _rar_. 
 
-##EXTENSION - Ubuntu PPAs
+## EXTENSION - Ubuntu PPAs
 
 Ubuntu also allows users to register an account and setup software in a Personal Package Archive (PPA) - typically these are setup by enthusiastic developers, and allow you to install the latest "cutting edge" software.
 
@@ -979,7 +979,7 @@ Now update your local cache of available applications:
 
 When you next run "sudo apt-get upgrade" you'll likely be prompted to install a new version of handbrake-cli - because the developers are literally making changes every day. (And if it's not obvious, when the developers have a bad day your software will stop working until they make a fix - that's the real "cutting edge"!)
 
-##SUMMARY
+## SUMMARY
 
 Installing only from the default repositories is clearly the safest, but there are often good reasons for going beyond them. As a sysadmin you need to judge the risks, but in the example we came up with a realistic scenario where connecting to an unstable working developer’s version made sense.
 
@@ -988,23 +988,23 @@ As general rule however you:
 * Will seldom have good reasons for hooking into more than one or two extra repositories
 * Need to read up about a repository first, to understand any potential disadvantages.
 
-##POSTING YOUR PROGRESS
+## POSTING YOUR PROGRESS
 
 Make sure that you install _lha_ - we've set our “magic robot script” to check your server for it.
 
-##RESOURCES
+## RESOURCES
 
 * How to use yum - Introduction (http://fedoranews.org/tchung/howto/2003-11-09-yum-intro.shtml)
 * Package management with APT (https://help.ubuntu.com/community/AptGet/Howto)
 * What do you mean by Free Software? (http://www.debian.org/intro/free)
 
 
-#Day 16 - tar and friends...
+# Day 16 - tar and friends...
 
-##INTRO
+## INTRO
 As a system administrator, you need to be able to confidently work with compressed “archives” of files. In particular two of your key responsibilities; installing new software, and managing backups, often require this.
 
-##CREATING ARCHIVES
+## CREATING ARCHIVES
 On other operating systems, applications like WinZip, and pkzip before it, have long been used to gather a series of files and folders into one compressed file - with a .zip extension. Linux takes a slightly different approach, with the "gathering" of files and folders done in one step, and the compression in another. 
 
 So, you could create a "snapshot" of the current files in your _/etc/init.d_ folder like this:
@@ -1030,7 +1030,7 @@ In practice you can do the two steps in one with the "-z" switch, like this:
 
 This uses the _-c_ switch to say that we're creating an archive; _-v_ to make the command "verbose"; _-z_ to compress the result - and _-f_ to specify the output file.
 
-##TASKS FOR TODAY
+## TASKS FOR TODAY
 
 * Check the links under "Resources" to better understand this - and to find out how to extract files from an archive!
 * Use _tar_ to create an archive copy of some files and check the resulting size
@@ -1038,28 +1038,28 @@ This uses the _-c_ switch to say that we're creating an archive; _-v_ to make th
 * Copy your archives to _/tmp_ (with: _cp_) and extract each there to test that it works
 
 
-##POSTING YOUR PROGRESS
+## POSTING YOUR PROGRESS
 
 Nothing to post today - but make sure you understand this stuff, because we'll be using it for real in the next day's session!
 
 
-##RESOURCES
+## RESOURCES
 
 * How Can I Do Archiving With Tar? (http://lowfatlinux.com/linux-tar.html)
 * Linux TAR Command (http://linuxbasiccommands.wordpress.com/2008/04/04/linux-tar-command/)
 * Linux tar command tutorial (https://www.youtube.com/watch?v=CUdwDEKlDrw) (video)
 
 
-##EXTENSION
+## EXTENSION
 
 * What is a .bz2 file - and how would you extract the files from it?
 * Research how absolute and relative paths are handled in tar - and why you need to be careful extracting from archives when logged in as root
 * You might notice that some tutorials write "tar cvf" rather than "tar -cvf" with the switch character - do you know why?
 
 
-#Day 17 - From the source
+# Day 17 - From the source
 
-##INTRO
+## INTRO
 A few days ago we saw how to authorise extra repositories for _apt-get_ to search, when we need unusual applications, or perhaps more recent versions than those in the standard repositories.
 
 Today we're literally going to "go to the source". This is not something to be done lightly - the whole reason for package managers is to make your life easy - but occasionally it is justified, and it is something you need to be aware of and comfortable with.
@@ -1158,28 +1158,28 @@ Type _set_ to see all your "environmental variables" - and look for the PATH var
 
 The _nmap_ utility relies on no other package or library, so is very easy to install from source. Most other packages have many "dependencies", so installing them from source by hand can be pretty challanging even when well explained (look at: http://oss.oetiker.ch/smokeping/doc/smokeping_install.en.html for a good example).
 
-##POSTING YOUR PROGRESS
+## POSTING YOUR PROGRESS
 
 Email tutor@GREP101.com with your comments on today's session.
 
 
-##RESOURCES
+## RESOURCES
 ------------------------------------------------------------
 * Understanding software Installation (configure, make, make install) (http://www.codecoffee.com/tipsforlinux/articles/27.html )
 * Installing From Tarballs (http://linux.byexamples.com/archives/156/installing-from-tarballs/)
 * How to rebuild an existing package from source (http://raphaelhertzog.com/2010/12/15/howto-to-rebuild-debian-packages/)
 * Compiling things on Ubuntu the Easy Way (https://help.ubuntu.com/community/CompilingEasyHowTo)
 
-##EXTENSION
+## EXTENSION
 Research some distributions where “from source” is normal:
 
 * What is Linux From Scratch? (http://www.linuxfromscratch.org/lfs/)
 * What is Gentoo? (http://www.gentoo.org/main/en/about.xml)
 * The Arch Build System (https://wiki.archlinux.org/index.php/Arch_Build_System)
 
-#Day 18 - Log rotation
+# Day 18 - Log rotation
 
-##INTRO
+## INTRO
 
 When you’re administering a remote server, logs are your best friend, but disk space problems can be your worst enemy - so while Linux applications are generally very good at generating logs, they need to be controlled.
 
@@ -1188,17 +1188,17 @@ The _logrotate_ application keeps your logs in check. Using this, you can define
 Good sysadmins love automation - having the computer automatically do the boring repetitive stuff Just Makes Sense.
 
 
-##ARE YOUR LOGS ROTATING?
+## ARE YOUR LOGS ROTATING?
 ------------------------------------------------------------
 Look into your logs directories - _/var/log_, and subdirectories like _/var/log/apache2_. Can you see that your logs are already being rotated? You should see a _/var/log/syslog_ file, but also a series of older compressed versions with names like _/var/log/syslog.1.gz_
 
 
-##WHEN DO THEY ROTATE?
+## WHEN DO THEY ROTATE?
 ------------------------------------------------------------
 You will recall that _cron_ is generally setup to run scripts in _/etc/cron.daily_ - so look in there and you should see a script called _logrotate_ - or possibly _00logrotate_ to force it to be the first task to run.
 
 
-##CONFIGURING LOGROTATE
+## CONFIGURING LOGROTATE
 ------------------------------------------------------------
 
 The overall configuration is set in _/etc/var/logrotate.conf_ - have a look at that, but then also look at the files under the directory _/etc/logrotate.d_, as the contents of these are merged in to create the full configuration.
@@ -1217,7 +1217,7 @@ Much of this is fairly clear: the apache2 .log file will be rotated each week, w
 
 Typically when you install an application a suitable logrotate “recipe” is installed for you, so you’ll not normally be creating these from scratch. However, the default settings won’t always match your requirements, so it’s perfectly reasonable for you as the sysadmin to edit these - for example, the default _apache2_ recipe above creates 52 weekly logs, but you might find it more useful to have logs rotated daily, a copy automatically emailed to an auditor, and just 30 days worth kept on the server.
 
-##RTFM
+## RTFM
 ------------------------------------------------------------
 This is a good time to mention that Linux comes with a fine on-line manual - invoked with the _man_ command. Each application you install also installs its own page into this manual, so that you can look at the page for _logrotate_ to see the full detail on the syntax like this:
 
@@ -1234,23 +1234,23 @@ You might also try:
 
 As you’ll see, these are excellent for the detailed syntax of a command, but many are extremely terse, and for others the amount of detail can be somewhat daunting!
 
-##YOUR TASK TODAY
+## YOUR TASK TODAY
 ------------------------------------------------------------
 * Edit your logrotate configuration for _apache2_ to rotate daily
 * Make whatever other changes you wish
 * Check the next day to see that it’s worked
 
 
-##RESOURCES
+## RESOURCES
 ------------------------------------------------------------
 * The Ultimate Logrotate Command Tutorial (http://www.thegeekstuff.com/2010/07/logrotate-examples/)
 * Howto: Use logrotate to manage log files (http://linuxers.org/howto/howto-use-logrotate-manage-log-files)
 * LINUX: openSUSE and logrotate (http://www.youtube.com/watch?v=UoHmj3ef3Is)
 * Use logrotate to Manage Log Files (http://library.linode.com/linux-tools/utilities/logrotate)
 
-#Day 19 - Inodes, symlinks and stat
+# Day 19 - Inodes, symlinks and stat
 
-##INTRO
+## INTRO
 
 Today's topic looks gives a peek “under the covers” at the technical detail of how files are stored.
 
@@ -1258,7 +1258,7 @@ Linux supports a large number of different “filesystems” - although on a ser
 
 The VFS is a key part of the Linux, and an overview of it and some of the surrounding concepts is very useful in confidently administering a system.
 
-##THE NEXT LAYER DOWN
+## THE NEXT LAYER DOWN
 Linux has an extra layer between the filename and the file's actual data on the disk - this is the _inode_. This has a numerical value which you can see most easily in two ways:
 
 The _-i_ switch on the _ls_ command:
@@ -1280,7 +1280,7 @@ The _stat_ command:
 Every file name "points" to an inode, which in turn points to the actual data on the disk. This means that several filenames could point to the same inode - and hence have exactly the same contents. In fact this is a standard technique - called a "hard link". The other important thing to note is that when we view the permissions, ownership and dates of filenames, these attributes are actually kept at the inode level, _not_ the filename. Much of the time this distinction is just theoretical, but it can be very important.
 
 
-##TWO SORTS OF LINKS
+## TWO SORTS OF LINKS
 Work through the steps below to get familiar with hard and soft linking:
 
 First move to your home directory with:
@@ -1314,7 +1314,7 @@ where the program "prog", is a symlink - originally to v3, but now points to v4 
 Read up in the links provided, and test on your server to gain a better understanding. In particular, see how permissions and file sizes work with symbolic links versus hard links or simple files
 
 
-##The Differences
+## The Differences
 
 Hard links:
 
@@ -1333,20 +1333,20 @@ Symbolic (soft) links:
 * They have their own inode
 
 
-##Resources
+## Resources
 
 * Hard and soft links (http://linuxgazette.net/105/pitcher.html)
 * What's an inode? (http://www.linux-mag.com/id/8658/)
 * UNIX / Linux filesystem Inodes (http://www.cyberciti.biz/tips/understanding-unixlinux-filesystem-inodes.html) Linux symbolic (soft) and hard links
 
 
-#Extension
+# Extension
 * Anatomy of the Linux file system (http://www.ibm.com/developerworks/linux/library/l-linux-filesystem/)
 
 
-#Day 20 - Scripting
+# Day 20 - Scripting
 
-#INTRO
+# INTRO
 Today is the final session for the course.
 
 You’ve seen that a continual emphasis for a sysadmin is to automate as much as possible, and also how in Linux the system is very “transparent” - once you know where to look!
@@ -1362,7 +1362,7 @@ Why make a script rather than just typing commands in manually?
 * Automation. Pop your script in _/etc/cron.daily_ and it will run each day, or install a symlink to it in the appropriate _/etc/rc.d_ folder and you can have it run each time the system is shut down or booted up.
 
 
-##START WITH A SHABANG!
+## START WITH A SHABANG!
 
 Scripts are just simple text files, but if you set the "execute" permissions on them then the command interpreter will look for a special line starting with the two characters “#” and “!” - referred to as the "shabang" (or "crunchbang") at the top of the file. 
 
@@ -1372,7 +1372,7 @@ This line typically looks like this:
 
 Normally anything starting with a "#" character would be treated as a comment, but in the first line and followed by a "!", it's interpreted as: _"please feed the rest of this to the /bin/bash program, which will interpret it as a script"_. All of our scripts will be written in the _bash_ language - the same as you’ve been typing at the command line throughout this course - but scripts can also be written in many other "scripting languages", so a script in the Perl language might start with _#!/usr/bin/perl_ 
 
-##YOUR FIRST SCRIPT
+## YOUR FIRST SCRIPT
 You'll write a small script to list out who's been most recently unsuccessfully trying to login to your server, using the entries in _/var/log/auth.log_.  
 
 Use _vim_ to create a file, _attacker_, in your home directory with this content:
@@ -1402,7 +1402,7 @@ Once you're happy with a script, and want to have it easily available, you'll pr
 ...and now it will Just Work whenever you type _attacker_
 
 
-##EXTENDING THE SCRIPT
+## EXTENDING THE SCRIPT
 You can expand this script so that it requires a parameter and prints out some syntax help when you don't give one. There are a few new tricks in this, so it's worth studying:
 
      #!/bin/bash
@@ -1426,9 +1426,9 @@ Again, use vim to create _"topattack"_, _chmod_ to make it executable and _mv_ t
 
 A collection of simple scripts like this is something that you can easily create to make your sysadmin tasks simpler, quicker and less error prone.
 
-And yes, this is the last lesson - so please, write to tutor@GREP101.com to let me know how the course went for you, and what you plan to do with your new knowledge and skills!
+And yes, this is the last lesson - so please, write to tutor@GREP101.com to let me know how the course went for you, and what you plan to do with your new knowledge and skills!</num>
 
-##RESOURCES
+## RESOURCES
 ------------------------------------------------------------
 * Writing a Simple Bash Script (https://www.linux.com/learn/tutorials/284789-writing-a-simple-bash-script-)
 * Learn Bash Scripts - Tutorial (video) (http://www.youtube.com/watch?v=QGvvJO5UIs4)
