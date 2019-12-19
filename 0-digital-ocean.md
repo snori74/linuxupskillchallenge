@@ -21,21 +21,19 @@ Signup is immediate - just provide your email address and a password of your cho
 * Authentication - choose "One time password"
 * Choose a hostname, the default ones are pretty ugly
 
-## Tweaking your new server
-You should have received a password for the "root" user in your email. Select your droplet and "Access" from the left hand sidebar and you should be able to login to the conole using this. Use the login name "root", and note that the password won't show as you type or paste it.
+## Adding a working user account
+You should have received a password for the "root" user in your email. Select your droplet and "Access" from the left hand sidebar and you should be able to login to the console using this. Use the login name "root", and note that the password won't show as you type or paste it.
 
 You'll be prompted to change your password. Select a long and secure one - this is important, because your server is on the open Internet and will be under immediate and sustained attack from bots attempting to "brute force" the root password.
 
-For the course we use the Best Practice of not logging as "root" remotely, so we'll create an ordinary user account, but give it the power to "become root" as necessary, like this:
+We want to follow the Best Practice of not logging as "root" remotely, so we'll create an ordinary user account, but give it the power to "become root" as necessary, like this:
 
     sudo adduser snori74
     sudo usermod -a -G adm snori74
     sudo usermod -a -G sudo snori74
 
-Obviosly replace 'snori74' with your name - and this will be the account that you use to login and work with your server. It has ben added to the 'adm' and 'suo' groups, which on an Uuntu system gives it access to read variuos logs and to "beome root" as required vi the _sudo_ command.
+(Of course, replace 'snori74' with your name!) 
 
+This will be the account that you use to login and work with your server. It has been added to the 'adm' and 'sudo' groups, which on an Ubuntu system gives it access to read various logs and to "become root" as required via the _sudo_ command.
 
-
-You now have the IP address for your server which you alone are responsible for administering!
-
-     
+You should see an "IPv4" entry for your server, this is its unique Internet IP address, and is how you'll connect to it. 
