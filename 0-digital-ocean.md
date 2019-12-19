@@ -38,9 +38,12 @@ This will be the account that you use to login and work with your server. It has
 
 ## You are now a sysadmin
 
-You should see an "IPv4" entry for your server, this is its unique Internet IP address, and is how you'll connect to it. Note that:
+You should see an "IPv4" entry for your server, this is its unique Internet IP address, and is how you'll connect to it. 
+
+Note that:
 * This server is now running, and completly exposed to the whole of the Internet
 * You alone are responsible for managing it
+
 It is reasonable at this point to install the latest updates by:
 
     apt update
