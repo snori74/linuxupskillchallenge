@@ -26,6 +26,13 @@ You should have received a password for the "root" user in your email. Select yo
 
 You'll be prompted to change your password. Select a long and secure one - this is important, because your server is on the open Internet and will be under immediate and sustained attack from bots attempting to "brute force" the root password.
 
+For the course we use the Best Practice of not logging as "root" remotely, so we'll create an ordinary user account, but give it the power to "become root" as necessary, like this:
+
+    sudo adduser snori74
+    sudo usermod -a -G adm snori74
+    sudo usermod -a -G sudo snori74
+
+Obviosly replace 'snori74' with your name - and this will be the account that you use to login and work with your server. It has ben added to the 'adm' and 'suo' groups, which on an Uuntu system gives it access to read variuos logs and to "beome root" as required vi the _sudo_ command.
 
 
 
