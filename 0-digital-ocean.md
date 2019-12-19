@@ -48,4 +48,3 @@ It is reasonable at this point to install the latest updates by:
 
 To logout, type _logout_ or _exit_.
 
-
