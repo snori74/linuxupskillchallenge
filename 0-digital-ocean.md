@@ -51,13 +51,14 @@ Logout as *root*, by typing logout or *exit*, then login as your new sysadmin us
 (you'll be asked to confirm your password)
 
 Then:
+
     apt upgrade
 
 Don't worry too much about the output and messages from these commands, but it should be clear whether they succeded or not. These commands are how you force the installation of updates on an Ubuntu Linux system, and only an administrator can do them.
 
 ## We can now safely disable login as the *root* user
 
-With our new working user able to perform all sysadmin tasks, there is no reason for us to login user *root*. Our server is exposed to all of the internet, and we can expect continuous attempts to login fro malicious bots - most of which will be attempting to login as *root*. While we did set a very secure passord just before, it would be nice to know that login is actually *impossible* - and it's possible to do that with this command:
+With our new working user able to perform all sysadmin tasks, there is no reason for us to login user *root*. Our server is exposed to all of the internet, and we can expect continuous attempts to login from malicious bots - most of which will be attempting to login as *root*. While we did set a very secure passord just before, it would be nice to know that remote login as *root* is actually *impossible* - and it's possible to do that with this command:
 
     sudo passwd root "!" -p
     
