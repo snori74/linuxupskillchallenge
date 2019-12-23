@@ -19,14 +19,14 @@ Signup is immediate - just provide your email address and a password of your cho
 * You don't need to add any block storage
 * Select whichever region you wish. 
 * Authentication - choose "One time password"
-* Choose a hostname, the default ones are pretty ugly
+* Choose a hostname, because the default ones are pretty ugly
 
 ## Changing the root password
 You should have received a password for the "root" user in your email. Select your droplet and "Access" from the left hand sidebar and you should be able to login to the console using this. Use the login name "root", and note that the password won't show as you type or paste it.
 
 You'll be immediatly prompted to change your password.
 
-note that you're first asked for the *current* password, then asked to provide a new one of your own and then to confirm this.
+(you're first asked for the *current* password, then asked to provide a new one of your own and then to confirm this)
 
 Be sure to create a long and secure password - this is important, because your server is on the open Internet and will be under immediate and sustained attack from bots attempting to "brute force" the root password.
 
