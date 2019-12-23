@@ -15,7 +15,7 @@ Signup is immediate - just provide your email address and a password of your cho
 * Choose "Manage, Droplets" from the left hand sidebar. (a "droplet" is Digital Ocean's cute name for a server!)
 * Select the image "Ubuntu 18.04"
 * For plan, choose "Starter"
-* You'll be prompted to start a $40/m plan, but select "Shoe all plans', and select the $50/mo one - that's fine for this course.
+* You'll be prompted to start a $40/m plan, but select "Show all plans', and select the $50/mo one - that's fine for this course.
 * You don't need to add any block storage
 * Select whichever region you wish. 
 * Authentication - choose "One time password"
