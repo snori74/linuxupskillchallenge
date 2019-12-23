@@ -67,6 +67,8 @@ This disables direct login access, while still allowing approved logged in users
 
 To logout, type _logout_ or _exit_.
 
+Your server is now all set up and ready for the course!
+
 ## Remote access via SSH
 
 You should see an "IPv4" entry for your server, this is its unique Internet IP address, and is how you'll connect to it via SSH (the Secure Shell protocol) - something we'll be covering in the first lesson. 
