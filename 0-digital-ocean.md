@@ -21,12 +21,18 @@ Signup is immediate - just provide your email address and a password of your cho
 * Authentication - choose "One time password"
 * Choose a hostname, the default ones are pretty ugly
 
-## Adding a working user account
+## Changing the root password
 You should have received a password for the "root" user in your email. Select your droplet and "Access" from the left hand sidebar and you should be able to login to the console using this. Use the login name "root", and note that the password won't show as you type or paste it.
 
-You'll be prompted to change your password. Select a long and secure one - this is important, because your server is on the open Internet and will be under immediate and sustained attack from bots attempting to "brute force" the root password.
+You'll be immediatly prompted to change your password.
 
-We want to follow the Best Practice of not logging as "root" remotely, so we'll create an ordinary user account, but give it the power to "become root" as necessary, like this:
+note that you're first asked for the *current* password, then asked to provide a new one of your own and then to confirm this.
+
+Be sure to create a long and secure password - this is important, because your server is on the open Internet and will be under immediate and sustained attack from bots attempting to "brute force" the root password.
+
+## Creating a working admin account
+
+We want to follow the Best Practice of not logging as "root" remotely, so we'll create an ordinary user account, but one with the power to "become root" as necessary, like this:
 
     sudo adduser snori74
     sudo usermod -a -G adm snori74
@@ -34,20 +40,38 @@ We want to follow the Best Practice of not logging as "root" remotely, so we'll 
 
 (Of course, replace 'snori74' with your name!) 
 
-This will be the account that you use to login and work with your server. It has been added to the 'adm' and 'sudo' groups, which on an Ubuntu system gives it access to read various logs and to "become root" as required via the _sudo_ command.
+*This* will be the account that you use to login and work with your server. It has been added to the 'adm' and 'sudo' groups, which on an Ubuntu system gives it access to read various logs and to "become root" as required via the _sudo_ command.
 
 ## You are now a sysadmin
 
-You should see an "IPv4" entry for your server, this is its unique Internet IP address, and is how you'll connect to it. 
+Logout as *root*, by typing logout or *exit*, then login as your new sysadmin user, and confirm that you can do administrative tasks by typing:
+
+    sudo apt update
+
+(you'll be asked to confirm your password)
+
+Then:
+    apt upgrade
+
+Don't worry too much about the output and messages from these commands, but it should be clear whether they succeded or not. These commands are how you force the installation of updates on an Ubuntu Linux system, and only an administrator can do them.
+
+## We can now safely disable login as the *root* user
+
+With our new working user able to perform all sysadmin tasks, there is no reason for us to login user *root*. Our server is exposed to all of the internet, and we can expect continuous attempts to login fro malicious bots - most of which will be attempting to login as *root*. While we did set a very secure passord just before, it would be nice to know that login is actually *impossible* - and it's possible to do that with this command:
+
+    sudo passwd root "!" -p
+    
+This disables direct login access, while still allowing approved logged in users to "become root' as necessary - and is the normal default configuration of an Ubuntu system. (Digital Ocean's choice to enable "root" in their image is non-standard).  
+
+
+To logout, type _logout_ or _exit_.
+
+## Remote access via SSH
+
+You should see an "IPv4" entry for your server, this is its unique Internet IP address, and is how you'll connect to it via SSH (the Secure Shell protocol) - something we'll be covering in the first lesson. 
 
 Note that:
 * This server is now running, and completly exposed to the whole of the Internet
 * You alone are responsible for managing it
-
-It is reasonable at this point to install the latest updates by:
-
-    apt update
-    apt upgrade
-
-To logout, type _logout_ or _exit_.
+* You have just installed the latest updates, so it should be secure for now
 
