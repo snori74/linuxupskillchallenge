@@ -52,7 +52,7 @@ Logout as *root*, by typing logout or *exit*, then login as your new sysadmin us
 
 Then:
 
-    apt upgrade
+    sudo apt upgrade
 
 Don't worry too much about the output and messages from these commands, but it should be clear whether they succeded or not. These commands are how you force the installation of updates on an Ubuntu Linux system, and only an administrator can do them.
 
