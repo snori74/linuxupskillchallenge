@@ -7,14 +7,36 @@ Through the magic of Linux and virtualisation, it's now possible to get a small 
 
 As well as a hosting provider, we also need to choose which "flavour" of Linux to install on our server. If you're new to Linux then the range of "distributions" available can be confusing - but the latest LTS ("Long Term Support") version of Ubuntu Server is a popular choice, and what you'll need for this course. 
  
-These instruction will walk you through using Digital Ocean (http://digitalocean.com) as your VPS hosting provider. They are rated highly, with a very simple and slick interface - and low cost of $5 (USD) per month for the minimal server that you'll be creating. (Of course, if you have a strong reason to use another provider, then by all means do so, but be sure to choose Ubuntu Server 18.04)
+These instruction will walk you through using AMazon's AWS "Free Tier"  (http://aws.amazon.com) as your VPS hosting provider. They are rated highly, with a very simple and slick interface. Although we'll be using the Free Tier, be warned that you will need to provide valid credit card information. (Of course, if you have a strong reason to use another provider, then by all means do so, but be sure to choose Ubuntu Server 18.04)
 
-## Signing up with Digital Ocean
-Signup is immediate - just provide your email address and a password of your choosing and you're in!
+## Signing up with AWS
+Signup is fairly simple - just provide your email address and a password of your choosing - along with a phone number for a 2FA - a second method of authentication.
+You will need to also provide your VISA or other credit card information.
+* For Support Plan, choose "Basic Plan/Free"
 
-* Choose "Manage, Droplets" from the left hand sidebar. (a "droplet" is Digital Ocean's cute name for a server!)
-* Select the image "Ubuntu 18.04"
-* For plan, choose "Starter"
+Logout, then login again, and then select:
+* Services - from the top menu
+* EC2 - from the list of services
+
+In "AWS speak" the server we'll create will be an "EC2 compute instance" - so now choose "Launch Instance". You will be presented with several image options - choose one with "Ubuntu Server 18.04 LTS" in the name.
+At the next screen you'll have options for the type - typicall only "t2.micro" is eleigble for the Free Tier, but this is fine, so selct to "review and Launch"
+At the review screen there will be an option "Security Groups" - this is infact a firewall configuration which AWS provides by default. While a good thing in general, for or purposes we want our server completely exposed, so we'll edit this to effectively disable it, like this:
+
+* Select "Configure Security Group"
+* Select "Add Rule"
+* Type: "All traffic", Source: "Anywhere"
+
+This opens all ports and protocols to access from anywhere. While this might be unwise for a production server, it should be fine for our purposes.
+
+Now select "Launch". When prompted for a key pair, use the dropdown to selct "I don't have a key pair"
+Your server instance should now launch, and you can login to it by:
+
+Services, EC2, Running instances, Connect
+
+
+
+
+
 * You'll be prompted to start a $40/m plan, but select "Show all plans', and select the $5/mo one - that's fine for this course.
 * You don't need to add any block storage
 * Select whichever region you wish. 
