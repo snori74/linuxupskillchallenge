@@ -74,7 +74,7 @@ Your server is now all set up and ready for the course!
 You should see an "IPv4" entry for your server, this is its unique Internet IP address, and is how you'll connect to it via SSH (the Secure Shell protocol) - something we'll be covering in the first lesson. 
 
 Note that:
-* This server is now running, and completly exposed to the whole of the Internet
+* This server is now running, and completely exposed to the whole of the Internet
 * You alone are responsible for managing it
 * You have just installed the latest updates, so it should be secure for now
 
