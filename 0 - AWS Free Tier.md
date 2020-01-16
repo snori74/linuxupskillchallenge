@@ -19,29 +19,32 @@ Logout, then login again, and then select:
 * EC2 - from the list of services
 
 In "AWS speak" the server we'll create will be an "EC2 compute instance" - so now choose "Launch Instance". You will be presented with several image options - choose one with "Ubuntu Server 18.04 LTS" in the name.
-At the next screen you'll have options for the type - typically only "t2.micro" is eleigble for the Free Tier, but this is fine, so selct to "review and Launch"
-At the review screen there will be an option "Security Groups" - this is infact a firewall configuration which AWS provides by default. While a good thing in general, for or purposes we want our server completely exposed, so we'll edit this to effectively disable it, like this:
+At the next screen you'll have options for the type - typically only "t2.micro" is eligible for the Free Tier, but this is fine, so select to "review and Launch"
+At the review screen there will be an option "Security Groups" - this is in fact a firewall configuration which AWS provides by default. While a good thing in general, for our purposes we want our server completely exposed, so we'll edit this to effectively disable it, like this:
 
 * Select "Configure Security Group"
 * Select "Add Rule"
 * Type: "All traffic", Source: "Anywhere"
 
-This opens all ports and protocols to access from anywhere. While this might be unwise for a production server, it is wht we want for this course.
+This opens all ports and protocols to access from anywhere. While this might be unwise for a production server, it is what we want for this course.
 
 Now select "Launch". When prompted for a key pair, create one.
 
 Your server instance should now launch, and you can login to it by:
 
-Services, EC2, Running instances, Connect
+* Services, EC2, Running instances, Connect
 
-This video, "How to Set Up AWS EC2 and Connect to Linux Instance with PuTTY" (https://www.youtube.com/watch?v=kARWT4ETcCs), gives a good overview of the pocess.
+## Remote access via SSH
 
+You should see an "IPv4" entry for your server, this is its unique Internet IP address, and is how you'll connect to it via SSH (the Secure Shell protocol) - something we'll be covering in the first lesson. 
 
-*This* will be the account that you use to login and work with your server. It has been added to the 'adm' and 'sudo' groups, which on an Ubuntu system gives it access to read various logs and to "become root" as required via the _sudo_ command.
+This video, "How to Set Up AWS EC2 and Connect to Linux Instance with PuTTY" (https://www.youtube.com/watch?v=kARWT4ETcCs), gives a good overview of the process.
+
+You will be logging in as the user *ubuntu*. It has been added to the 'adm' and 'sudo' groups, which on an Ubuntu system gives it access to read various logs - and to "become root" as required via the _sudo_ command.
 
 ## You are now a sysadmin
 
-Logout as *root*, by typing logout or *exit*, then login as your new sysadmin user, and confirm that you can do administrative tasks by typing:
+Confirm that you can do administrative tasks by typing:
 
     sudo apt update
 
@@ -53,22 +56,9 @@ Then:
 
 Don't worry too much about the output and messages from these commands, but it should be clear whether they succeded or not. These commands are how you force the installation of updates on an Ubuntu Linux system, and only an administrator can do them.
 
-## We can now safely disable login as the *root* user
-
-With our new working user able to perform all sysadmin tasks, there is no reason for us to login user *root*. Our server is exposed to all of the internet, and we can expect continuous attempts to login from malicious bots - most of which will be attempting to login as *root*. While we did set a very secure passord just before, it would be nice to know that remote login as *root* is actually *impossible* - and it's possible to do that with this command:
-
-    sudo passwd root "!" -p
-    
-This disables direct login access, while still allowing approved logged in users to "become root' as necessary - and is the normal default configuration of an Ubuntu system. (Digital Ocean's choice to enable "root" in their image is non-standard).  
-
-
 To logout, type _logout_ or _exit_.
 
 Your server is now all set up and ready for the course!
-
-## Remote access via SSH
-
-You should see an "IPv4" entry for your server, this is its unique Internet IP address, and is how you'll connect to it via SSH (the Secure Shell protocol) - something we'll be covering in the first lesson. 
 
 Note that:
 * This server is now running, and completely exposed to the whole of the Internet
