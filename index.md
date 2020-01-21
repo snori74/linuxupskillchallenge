@@ -7,7 +7,7 @@ The course is run via Reddit, so you will need a Reddit login, and to subscribe 
 
 Each daily lesson is posted there, and it allows a great forum-style interface to discuss and get help. 
 
-Warning: 
+Note: 
 * Requires a daily commitment of at least 1-2 hours each day for a month
 * The course content is somewhat "opinionated"
 * The focus is on practical skills 
