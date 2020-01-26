@@ -1,2 +1,0 @@
-% GREP101 - Linux Server Administration for Fun
-% Steve Brorens (c) 2014
