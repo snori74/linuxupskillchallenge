@@ -3,9 +3,11 @@
 A month-long course aimed at those who aspire to get Linux-related jobs in industry - junior Linux sysadmin, devops-related work and similar. Server focussed and commandline, but assumes essentially no prior knowledge, and starts off very gently - designed to be well-suited to a Windows or Apple person as well as those that already
 using Linux in some form.
 
-The course is run via Reddit, so you will need a Reddit login, and to subscribe to: https://reddit.com/r/linuxupskillchallange is fully open source, Free - and costs you nothing but your time! 
+The course is run via Reddit, so you will need a Reddit login, and to subscribe to: https://reddit.com/r/linuxupskillchallange 
 
 Each daily lesson is posted there, and it allows a great forum-style interface to discuss and get help. 
+
+It is fully open source - and costs you nothing but your time! 
 
 Note: 
 * The focus is on practical skills 
