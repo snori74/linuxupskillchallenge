@@ -1,7 +1,7 @@
 
 *Introduction to Linux Server Administration!*
 
-This includes all the source material for the 20 lessons of what was the commercial online GREP101.com Linux server admin course - now free for you to learn with!
+This includes all the source material for the 20 lessons of what was a previous commercial online Linux server admin course - now free for you to learn with!
 
 If you spot any typos or "dead links" simply raise a GitHub "issue" against this project.
 
