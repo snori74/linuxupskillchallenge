@@ -21,3 +21,5 @@ subreddit.
 The first day's lesson will go live Monday 03 February. As the lesson go up, we'll be trimming off the earlier ones - so don't procrastinate!
 
 Each month we'll 'reset', with "Day 1" again going up on the first Monday of the month.
+
+(Yup the spelling *is* wrong! Too late to change, so it's going to have to stay that way for now...)
