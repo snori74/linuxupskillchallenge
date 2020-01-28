@@ -54,7 +54,7 @@ Then:
 
     sudo apt upgrade
 
-Don't worry too much about the output and messages from these commands, but it should be clear whether they succeded or not. These commands are how you force the installation of updates on an Ubuntu Linux system, and only an administrator can do them.
+Don't worry too much about the output and messages from these commands, but it should be clear whether they succeeded or not. (Reply to any prompts by taking the default option). These commands are how you force the installation of updates on an Ubuntu Linux system, and only an administrator can do them.
 
 To logout, type _logout_ or _exit_.
 
