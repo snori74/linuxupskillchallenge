@@ -1,4 +1,4 @@
-# Day 0 - Creating Your Own Server - with Digital Ocean
+# Day 0 - Creating Your Own Server - with $5 Digital Ocean plan
 
 ## INTRO
 First, you need a server. You can't really learn about administering a remote Linux server without having a one of your own - so today we're going to buy one!
