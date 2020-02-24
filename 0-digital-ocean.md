@@ -24,7 +24,7 @@ Signup is immediate - just provide your email address and a password of your cho
 ## Changing the root password
 You should have received a password for the "root" user in your email. Select your droplet and "Access" from the left hand sidebar and you should be able to login to the console using this. Use the login name "root", and note that the password won't show as you type or paste it.
 
-You'll be immediatly prompted to change your password.
+You'll be immediately prompted to change your password.
 
 (you're first asked for the *current* password, then asked to provide a new one of your own and then to confirm this)
 
@@ -54,11 +54,11 @@ Then:
 
     sudo apt upgrade
 
-Don't worry too much about the output and messages from these commands, but it should be clear whether they succeded or not. These commands are how you force the installation of updates on an Ubuntu Linux system, and only an administrator can do them.
+Don't worry too much about the output and messages from these commands, but it should be clear whether they succeeded or not. These commands are how you force the installation of updates on an Ubuntu Linux system, and only an administrator can do them.
 
 ## We can now safely disable login as the *root* user
 
-With our new working user able to perform all sysadmin tasks, there is no reason for us to login user *root*. Our server is exposed to all of the internet, and we can expect continuous attempts to login from malicious bots - most of which will be attempting to login as *root*. While we did set a very secure passord just before, it would be nice to know that remote login as *root* is actually *impossible* - and it's possible to do that with this command:
+With our new working user able to perform all sysadmin tasks, there is no reason for us to login user *root*. Our server is exposed to all of the internet, and we can expect continuous attempts to login from malicious bots - most of which will be attempting to login as *root*. While we did set a very secure password just before, it would be nice to know that remote login as *root* is actually *impossible* - and it's possible to do that with this command:
 
     sudo usermod root "!" -p
     
@@ -77,4 +77,3 @@ Note that:
 * This server is now running, and completely exposed to the whole of the Internet
 * You alone are responsible for managing it
 * You have just installed the latest updates, so it should be secure for now
-
