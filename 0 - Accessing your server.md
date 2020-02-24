@@ -26,9 +26,9 @@ For example:
 
 	ssh support@192.123.321.99
 
-If you've setup to use a public keypair, then you'll need to point to the location of the public part as proof of identy with the "_-i_" switch, typically like this:
+If you've setup to use a public keypair, then you'll need to point to the location of the public part as proof of identity with the "_-i_" switch, typically like this:
 
-  ssh -i ~/.ssh/id_rsa support@192.123.321.99
+    ssh -i ~/.ssh/id_rsa support@192.123.321.99
 
 On an MacOS machine you'll normally access the command line via Terminal.app - it's in the Utilities sub-folder of Applications. On Linux distributions with a menu you'll typically find it under "Applications menu -> Accessories -> Terminal", "Applications menu -> System -> Terminal" or "Menu -> System -> Terminal Program (Konsole)"- or you can simply search for your terminal application.
 
