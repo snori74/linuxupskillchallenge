@@ -60,7 +60,7 @@ Don't worry too much about the output and messages from these commands, but it s
 
 With our new working user able to perform all sysadmin tasks, there is no reason for us to login user *root*. Our server is exposed to all of the internet, and we can expect continuous attempts to login from malicious bots - most of which will be attempting to login as *root*. While we did set a very secure password just before, it would be nice to know that remote login as *root* is actually *impossible* - and it's possible to do that with this command:
 
-    sudo usermod root "!" -p
+    sudo usermod -p "!" root
     
 This disables direct login access, while still allowing approved logged in users to "become root' as necessary - and is the normal default configuration of an Ubuntu system. (Digital Ocean's choice to enable "root" in their image is non-standard).  
 
