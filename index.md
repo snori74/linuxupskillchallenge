@@ -1,25 +1,75 @@
-# Linux Upskill Challenge
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
 
-A month-long course aimed at those who aspire to get Linux-related jobs in industry - junior Linux sysadmin, devops-related work and similar. Server focussed and commandline, but assumes essentially no prior knowledge, and starts off very gently - designed to be well-suited to a Windows or Apple person as well as those that already
-using Linux in some form.
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Linux Upskill Challenge | linuxupskillchallenge</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Linux Upskill Challenge" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Learn the skills required to sysadmin a remote Linux server from the commandline." />
+<meta property="og:description" content="Learn the skills required to sysadmin a remote Linux server from the commandline." />
+<link rel="canonical" href="https://www.linuxupskillchallenge.com/" />
+<meta property="og:url" content="https://www.linuxupskillchallenge.com/" />
+<meta property="og:site_name" content="linuxupskillchallenge" />
+<script type="application/ld+json">
+{"@type":"WebSite","headline":"Linux Upskill Challenge","url":"https://www.linuxupskillchallenge.com/","name":"linuxupskillchallenge","description":"Learn the skills required to sysadmin a remote Linux server from the commandline.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
 
-The course is run via Reddit, so you will need a Reddit login, and to subscribe to: https://reddit.com/r/linuxupskillchallenge 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link rel="stylesheet" href="/assets/css/style.css?v=e26a9283527abb193054bbc9780a0f7d1b3de984">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">linuxupskillchallenge</h1>
+      <h2 class="project-tagline">Learn the skills required to sysadmin a remote Linux server from the commandline.</h2>
+      
+        <a href="https://github.com/snori74/linuxupskillchallenge" class="btn">View on GitHub</a>
+      
+      
+    </section>
 
-Each daily lesson is posted there, and it allows a great forum-style interface to discuss and get help. 
+    <section class="main-content">
+      <h1 id="linux-upskill-challenge">Linux Upskill Challenge</h1>
 
-It is fully open source - and costs you nothing but your time! 
+<p>A month-long course aimed at those who aspire to get Linux-related jobs in industry - junior Linux sysadmin, devops-related work and similar. Server focussed and commandline, but assumes essentially no prior knowledge, and starts off very gently - designed to be well-suited to a Windows or Apple person as well as those that already
+using Linux in some form.</p>
 
-Note: 
-* The focus is on practical skills 
-* Heavily hands-on
-* Requires a daily commitment of at least 1-2 hours each day for a month
-* Often points to curated external links. 
-* Much less 'formal' than RHEL or Linux Foundation training
+<p>The course is run via Reddit, so you will need a Reddit login, and to subscribe to: <a href="https://reddit.com/r/linuxupskillchallenge">r/linuxupskillchallenge</a>
 
-If you're keen to do this, then you will need your own Internet-exposed server - but full
-instructions on how to set this up for free or cheap are now up as 'Day 0' posts in the
-subreddit.
+<p>Each weekday a new lesson is posted there, and it allows a great forum-style interface to discuss and get help.</p>
 
-The first day's lesson will go live Monday 03 February. As the lesson go up, we'll be trimming off the earlier ones - so don't procrastinate!
+<p>This was a $250 paid course, but is now free and fully open source - so costs you nothing but your time!</p>
 
-Each month we'll 'reset', with "Day 1" again going up on the first Monday of the month.
+<p>Note:</p>
+<ul>
+  <li>The focus is on practical skills</li>
+  <li>Heavily hands-on</li>
+  <li>Requires a daily commitment of 1-2 hours each day for a month</li>
+  <li>Often points to curated external links.</li>
+  <li>Much less ‘formal’ than RHEL or Linux Foundation training</li>
+</ul>
+
+<p>If you’re keen to do this, then you will need your own Internet-exposed server - but full
+instructions on how to set this up for free or cheap are now up as ‘Day 0’ posts in the
+subreddit.</p>
+
+<p>The next course starts on Monday 06 March. As each new lesson gets posted, we’ll be trimming an earlier one - so make sure you keep up!</p>
+
+<p>Each month we’ll ‘reset’, with “Day 1” again going up on the first Monday of the month.</p>
+
+
+      <footer class="site-footer">
+        
+          <span class="site-footer-owner"><a href="https://github.com/snori74/linuxupskillchallenge">linuxupskillchallenge</a> is maintained by <a href="https://github.com/snori74">snori74</a>.</span>
+        
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
+      </footer>
+    </section>
+
+    
+  </body>
+</html>
+
