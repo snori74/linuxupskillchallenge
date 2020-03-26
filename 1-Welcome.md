@@ -1,4 +1,4 @@
-# Day 1 - Welcome to the challange!
+# Welcome to the challange!
 
 ## Congratulatons on making the commitment
 
