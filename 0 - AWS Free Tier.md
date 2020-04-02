@@ -7,7 +7,7 @@ Through the magic of Linux and virtualisation, it's now possible to get a small 
 
 As well as a hosting provider, we also need to choose which "flavour" of Linux to install on our server. If you're new to Linux then the range of "distributions" available can be confusing - but the latest LTS ("Long Term Support") version of Ubuntu Server is a popular choice, and what you'll need for this course. 
  
-These instruction will walk you through using AMazon's AWS "Free Tier"  (http://aws.amazon.com) as your VPS hosting provider. They are rated highly, with a very simple and slick interface. Although we'll be using the Free Tier, be warned that you will need to provide valid credit card information. (Of course, if you have a strong reason to use another provider, then by all means do so, but be sure to choose Ubuntu Server 18.04)
+These instruction will walk you through using Amazon's AWS "Free Tier"  (http://aws.amazon.com) as your VPS hosting provider. They are rated highly, with a very simple and slick interface. Although we'll be using the Free Tier, be warned that you will need to provide valid credit card information. (Of course, if you have a strong reason to use another provider, then by all means do so, but be sure to choose Ubuntu Server 18.04)
 
 ## Signing up with AWS
 Signup is fairly simple - just provide your email address and a password of your choosing - along with a phone number for a 2FA - a second method of authentication.
