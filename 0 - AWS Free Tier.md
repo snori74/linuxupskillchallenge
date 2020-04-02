@@ -1,7 +1,7 @@
 # Day 0 - Creating Your Own Server - with AWS Free Tier
 
 ## INTRO
-First, you need a server. You can't really learn about administering a remote Linux server without having a one of your own - so today we're going to buy one!
+First, you need a server. You can't really learn about administering a remote Linux server without having a one of your own - so today we're going get one - completly free!
 
 Through the magic of Linux and virtualisation, it's now possible to get a small Internet server setup almost instantly - and at very low cost. Technically, what you'll be doing is creating and renting a VPS  ("Virtual Private Server"). In a datacentre somewhere a single physical server running Linux will be split into a dozen or more Virtual servers using the KVM (Kernel-based Virtual Machine) feature that's been part of Linux since early 2007. There are many hundreds of hosting companies offering low cost VPS deals - and sites like http://lowendbox.com/ that compare them.
 
