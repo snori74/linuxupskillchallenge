@@ -1,4 +1,4 @@
-TITLE: Commandline/sysadin course in r/linuxupskillchallenge
+TITLE: Commandline/sysadmin course in r/linuxupskillchallenge
 
 This month-long challenge for anyone wanting to build Linux sysadmin skills is re-starting again this coming Monday.
 
