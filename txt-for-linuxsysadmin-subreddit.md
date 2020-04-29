@@ -1,4 +1,4 @@
-A month-long challenge for anyone wanting to build Linux sysadmin skills - http://linuxupskillchallenge.com
+TITLE: A month-long challenge for anyone wanting to build Linux sysadmin skills - http://linuxupskillchallenge.comLinux commandline/sysadmin "challenge" course starts again on Monday
 
 Daily lessons will appear in the sub-reddit r/linuxupskillchallenge from this coming Monday - which will also be used for support/discussion. This is a "rolling" course, restarted each month.
 
