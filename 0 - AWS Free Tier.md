@@ -48,7 +48,7 @@ Confirm that you can do administrative tasks by typing:
 
     sudo apt update
 
-(Normally you'd expect this would prompt you to confirm your password, but because you're using public key authentication the system hasn't promoted you to set up a password)
+(Normally you'd expect this would prompt you to confirm your password, but because you're using public key authentication the system hasn't promoted you to set up a password - and AWS have configured *sudo* to not request one for "ubuntu").
 
 Then:
 
