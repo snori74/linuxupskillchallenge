@@ -18,7 +18,7 @@ Logout, then login again, and then select:
 * Services - from the top menu
 * EC2 - from the list of services
 
-In "AWS speak" the server we'll create will be an "EC2 compute instance" - so now choose "Launch Instance". You will be presented with several image options - choose one with "Ubuntu Server 18.04 LTS" in the name.
+In "AWS speak" the server we'll create will be an "EC2 compute instance" - so now choose "Launch Instance". You will be presented with several image options - choose one with "Ubuntu Server 20.04 LTS" in the name.
 At the next screen you'll have options for the type - typically only "t2.micro" is eligible for the Free Tier, but this is fine, so select to "review and Launch"
 At the review screen there will be an option "Security Groups" - this is in fact a firewall configuration which AWS provides by default. While a good thing in general, for our purposes we want our server completely exposed, so we'll edit this to effectively disable it, like this:
 
@@ -48,7 +48,7 @@ Confirm that you can do administrative tasks by typing:
 
     sudo apt update
 
-(you'll be asked to confirm your password)
+(Normally you'd expect this would prompt you to confirm your password, but because you're using public key authentication the system hasn't promoted you to set up a password)
 
 Then:
 
