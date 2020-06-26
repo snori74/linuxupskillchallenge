@@ -1,4 +1,4 @@
-# Welcome to the challange!
+# Welcome to the challenge!
 
 ## Congratulatons on making the commitment!
 
