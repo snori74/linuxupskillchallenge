@@ -20,7 +20,7 @@ This course is squarely aimed at two groups: (1) Linux users who aspire to get L
 However, many others have happily used the course simply to improve their Linux command line skills – and that’s just fine too.
 
 ##A daily lesson
-One of the key elements of the course is that the material is delivered in 20 bite-sized lesson, one each workday into this subreddit. At any one time, just the last four lessons are available (we remove the older ones) – this gives you a bit of an incentive to “keep up”.
+One of the key elements of the course is that the material is delivered in 20 bite-sized lessons, one each workday into this subreddit. At any one time, just the last four lessons are available (we remove the older ones) – this gives you a bit of an incentive to “keep up”.
 
 The first few days are pretty basic, but there's generally some "Extension" items for the more experienced.
 
