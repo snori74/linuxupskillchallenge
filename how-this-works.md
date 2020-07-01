@@ -4,9 +4,9 @@
 
 Do I *really* need a cloud-based server?
 
-Yes, if you’re in the target audience (see below) you definitely should. The fact that such as server is very remote, and open to attack from the whole Internet, “makes it real”. Learning how to setup such a VPS is also a handy skill. for a sysadmin. 
+Yes, if you’re in the target audience (see below) you definitely should. The fact that such as server is very remote, and open to attack from the whole Internet, “makes it real”. Learning how to setup such a VPS is also a handy skill for a sysadmin. 
 
-Instructions for setting up a suitable server with a couple of providors are in the "Day 0" posts. By all means use a different providor, but ensure you use Ubuntu LTS (18.04 or 20.04), and either use public key authentication or a long strong unique password.
+Instructions for setting up a suitable server with a couple of providers are in the "Day 0" posts. By all means use a different providor, but ensure you use Ubuntu LTS (18.04 or 20.04), and either use public key authentication or a long strong unique password.
 
 Of course, you’re perfectly entitled to use a local VM, an old laptop in the corner or a Raspberry Pi instead – and all of these will work fine for the course material.
 
