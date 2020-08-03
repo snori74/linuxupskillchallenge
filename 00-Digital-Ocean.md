@@ -33,9 +33,9 @@ Select your droplet and "Access" from the left hand sidebar and you should be ab
 
 We want to follow the Best Practice of not logging as "root" remotely, so we'll create an ordinary user account, but one with the power to "become root" as necessary, like this:
 
-    sudo adduser snori74
-    sudo usermod -a -G adm snori74
-    sudo usermod -a -G sudo snori74
+    adduser snori74
+    usermod -a -G adm snori74
+    usermod -a -G sudo snori74
 
 (Of course, replace 'snori74' with your name!) 
 
