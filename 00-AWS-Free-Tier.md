@@ -46,13 +46,13 @@ You will be logging in as the user *ubuntu*. It has been added to the 'adm' and 
 
 Confirm that you can do administrative tasks by typing:
 
-    sudo apt update
+`sudo apt update`
 
 (Normally you'd expect this would prompt you to confirm your password, but because you're using public key authentication the system hasn't promoted you to set up a password - and AWS have configured *sudo* to not request one for "ubuntu").
 
 Then:
 
-    sudo apt upgrade
+`sudo apt upgrade`
 
 Don't worry too much about the output and messages from these commands, but it should be clear whether they succeeded or not. (Reply to any prompts by taking the default option). These commands are how you force the installation of updates on an Ubuntu Linux system, and only an administrator can do them.
 
