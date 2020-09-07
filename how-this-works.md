@@ -1,6 +1,10 @@
 # HOW THIS WORKS...
 
-This is the home of the monthly "Linux Upskill Challenge". 
+The website of the course is: https://LinuxUpskillChallenge.org
+The home of the monthly "Linux Upskill Challenge" is: https://www.reddit.com/r/linuxupskillchallenge/
+The "source" for the daily lessons is all available: https://github.com/snori74/linuxupskillchallenge 
+Chat about the course at: https://discordapp.com/invite/wd4Zqyk
+
 
 ## You'll need to setup a cloud-based server
 
