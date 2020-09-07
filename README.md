@@ -8,3 +8,7 @@ If you spot any typos or "dead links" simply raise a GitHub "issue" against this
 You are free to use this under the terms of the license, but copyright remains with the author.
   
  - Steve
+
+# Compiled Book:
+
+[book.pdf](book.pdf)
