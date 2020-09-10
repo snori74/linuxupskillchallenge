@@ -20,6 +20,8 @@ So, if you are in this situation, below are some of your options:
 
 * https://education.github.com/pack?sort=popularity&tag=Cloud - Github Educate, Requires student email and a proof of being a student, Activaion is NOT instant. Includes \$100 AWS credits and/or \$50 Digital Ocean credits.
 
+* https://www.ibm.com/cloud/freeIBM - IBM allows free acount to try their VPS (know as Hyper Protect Virtual Server) for up to 30 days. VPS is 1vCPU, 2GB RAM and 50GB storage. ([VPS Page](https://www.ibm.com/cloud/hyper-protect-virtual-servers))
+
 ### Comparison
 
 | Providor      | Instant Activation? | Must be a student?        | VPS ram       | VPS cpu count | Time                         | Credits |
