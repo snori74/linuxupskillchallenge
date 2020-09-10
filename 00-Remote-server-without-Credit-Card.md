@@ -20,6 +20,10 @@ So, if you are in this situation, below are some of your options:
 
 * https://education.github.com/pack?sort=popularity&tag=Cloud - Github Educate, Requires student email and a proof of being a student, Activaion is NOT instant. Includes \$100 AWS credits and/or \$50 Digital Ocean credits.
 
+* AWS Educate (Part Of Github Student Pack) - \$100 free credits
+
+* Digital Ocean (Part Of Github Student Pack) - \$50 free credits
+
 ### Comparison
 
 | Providor      | Instant Activation? | Must be a student?        | VPS ram       | VPS cpu count | Time                         | Credits |
