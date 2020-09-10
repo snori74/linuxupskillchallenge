@@ -6,7 +6,7 @@ We normally recommend using Amazon's AWS "Free Tier" (http://aws.amazon.com) or 
 
 Some will accept Paypal, or Bitcoin - but typically those who don't have a credit card don't have these either.
 
-Note that many will also require you to be over 18, and this is true also of some of the options blow.
+Note that many will also require you to be over 18 (but not all), and this is true also of some of the options blow.
 
 WARNING: If you go searching too deeply for options in this area, you're very likely to come across a range scammy, fake or fraudulent sites. While we've tried to eliminate these from the links below, please do be careful! It should go without saying that none of these are "affiliate" links, and we get no kick-backs from any of them :-)
 
@@ -20,7 +20,7 @@ So, if you are in this situation, below are some of your options:
 
 * https://education.github.com/pack?sort=popularity&tag=Cloud - Github Educate, Requires student email and a proof of being a student, Activaion is NOT instant. Includes \$100 AWS credits and/or \$50 Digital Ocean credits.
 
-* AWS Educate (Part Of Github Student Pack) - \$100 free credits
+* https://aws.amazon.com/education/awseducate/ - AWS Educate (can apply without Github Student Pack) - \$100 free credits
 
 * Digital Ocean (Part Of Github Student Pack) - \$50 free credits
 
