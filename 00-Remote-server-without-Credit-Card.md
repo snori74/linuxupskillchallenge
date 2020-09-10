@@ -12,10 +12,10 @@ WARNING: If you go searching too deeply for options in this area, you're very li
 
 So, if you are in this situation, below are some of your options:
 
-##Free Trail
+## Free Trail
 * https://www.ibm.com/cloud/free - no credit card or student email required, 30 days trail. (VPS service known as Hyper Protect Virtual Server)
 
-##Educational packs
+## Educational packs
 * https://azure.microsoft.com/en-gb/free/students/ - explicity no credit card required, just needs an "educational email address")
 
 * https://education.github.com/pack?sort=popularity&tag=Cloud - Github Educate, Requires student email and a proof of being a student, Activaion is NOT instant. Includes \$100 AWS credits and/or \$50 Digital Ocean credits.
@@ -29,7 +29,7 @@ So, if you are in this situation, below are some of your options:
 | AWS educate   | No                  | Yes (Github student pack) | ???           | ???           | ???                          | \$100   |
 | Digital Ocean | No                  | Yes                       | ???           | ???           | ???                          | \$50    |
 
-##Cards that work as, or like, credit cards
+## Cards that work as, or like, credit cards
 * Debit cards
 * https://www.paysafecard.com/
 * privacy.com (US-only)
