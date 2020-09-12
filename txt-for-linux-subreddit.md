@@ -1,4 +1,4 @@
-Title: The junior sysadmin course at r/LinuxUpskillChallenge restarts shortly
+TITLE: The junior sysadmin course at r/LinuxUpskillChallenge restarts shortly
 
 This free month-long course is re-starting again on the first Monday of next month.
 
