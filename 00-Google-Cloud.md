@@ -29,7 +29,7 @@ Set "Source IP Ranges" to  "0.0.0.0/0"
 Set "Protocols and Ports" to "Allow All"
 Create and repeat the steps by creating a new Firewall and setting "Direction of Traffic" to "Egress"
 
-##Logging in for the first time.
+## Logging in for the first time.
 Select your instance and click "ssh" it will open a new window console. To access the root, type "sudo -i passwd" in the command line then set your own password. Log in by typing "su" and "password". Note that the password won't show as you type or paste it.
 
 ## You are now a sysadmin
