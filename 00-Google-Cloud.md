@@ -32,6 +32,9 @@ Create and repeat the steps by creating a new Firewall and setting "Direction of
 ## Logging in for the first time.
 Select your instance and click "ssh" it will open a new window console. To access the root, type "sudo -i passwd" in the command line then set your own password. Log in by typing "su" and "password". Note that the password won't show as you type or paste it.
 
+## Setting up SSH
+You can also refer to https://cloud.google.com/compute/docs/instances/connecting-advanced#thirdpartytools if you intend to access your server via third-party tools (e.g. Putty)
+
 ## You are now a sysadmin
 
 Confirm that you can do administrative tasks by typing:
