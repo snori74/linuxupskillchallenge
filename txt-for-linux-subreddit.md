@@ -1,9 +1,9 @@
-TITLE: Commandline/sysadmin course in r/linuxupskillchallenge
+TITLE: The junior sysadmin course at r/LinuxUpskillChallenge restarts shortly
 
-This month-long challenge for anyone wanting to build Linux sysadmin skills is re-starting again on the first Monday of next month.
+This free month-long course is re-starting again on the first Monday of next month.
 
-Daily lessons appear in  the sub-reddit /r/linuxupskillchallenge  - which is also used for support/discussion.  This is a 'rolling' course repeated each month. Does require some serious commitment, but if gaining/growing these skills is something you've been meaning to do, then you now have no excuse! 
+Daily lessons appear in the sub-reddit /r/linuxupskillchallenge - which is also used for support/discussion. 
 
-More detail at: http://linuxupskillchallenge.com 
+Has been running successfully now every month since February - more detail at: http://LinuxUpskillChallenge.org
 
-Any feedback very welcome.
+- Steve

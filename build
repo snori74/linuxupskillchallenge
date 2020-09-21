@@ -1,2 +1,11 @@
 #!/bin/bash
-pandoc --pdf-engine=xelatex -o book.pdf 01.md 02.md 03.md 04.md 05.md 06.md 07.md 08.md 09.md 10.md 11.md 12.md 13.md 14.md 15.md 16.md 17.md 18.md 19.md 20.md
+# 
+# This will build one big PDF file from the course files.
+# 
+# You may need to install some packages first for this to work:
+#
+#   sudo apt install pandoc
+#   sudo apt-get install texlive-latex-base
+#   sudo apt-get install texlive-fonts-recommended
+
+pandoc -o book.pdf 01.md 02.md 03.md 04.md 05.md 06.md 07.md 08.md 09.md 10.md 11.md 12.md 13.md 14.md 15.md 16.md 17.md 18.md 19.md 20.md 21.md

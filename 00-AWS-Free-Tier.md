@@ -7,7 +7,7 @@ Through the magic of Linux and virtualisation, it's now possible to get a small 
 
 As well as a hosting provider, we also need to choose which "flavour" of Linux to install on our server. If you're new to Linux then the range of "distributions" available can be confusing - but the latest LTS ("Long Term Support") version of Ubuntu Server is a popular choice, and what you'll need for this course. 
  
-These instruction will walk you through using Amazon's AWS "Free Tier" (http://aws.amazon.com) as your VPS hosting provider. They are rated highly, with a very simple and slick interface. Although we'll be using the Free Tier, be warned that you will need to provide valid credit card information. (Of course, if you have a strong reason to use another provider, then by all means do so, but be sure to choose Ubuntu Server 18.04)
+These instruction will walk you through using Amazon's AWS "Free Tier" (http://aws.amazon.com) as your VPS hosting provider. They are rated highly, with a very simple and slick interface. Although we'll be using the Free Tier, be warned that you will need to provide valid credit card information. (Of course, if you have a strong reason to use another provider, then by all means do so, but be sure to choose Ubuntu Server 20.04)
 
 ## Signing up with AWS
 Signup is fairly simple - just provide your email address and a password of your choosing - along with a phone number for a 2FA - a second method of authentication.
@@ -46,13 +46,13 @@ You will be logging in as the user *ubuntu*. It has been added to the 'adm' and 
 
 Confirm that you can do administrative tasks by typing:
 
-    sudo apt update
+`sudo apt update`
 
 (Normally you'd expect this would prompt you to confirm your password, but because you're using public key authentication the system hasn't promoted you to set up a password - and AWS have configured *sudo* to not request one for "ubuntu").
 
 Then:
 
-    sudo apt upgrade
+`sudo apt upgrade`
 
 Don't worry too much about the output and messages from these commands, but it should be clear whether they succeeded or not. (Reply to any prompts by taking the default option). These commands are how you force the installation of updates on an Ubuntu Linux system, and only an administrator can do them.
 

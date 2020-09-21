@@ -8,14 +8,14 @@ Through the magic of Linux and virtualisation, it's now possible to get a small 
 
 As well as a hosting provider, we also need to choose which "flavour" of Linux to install on our server. If you're new to Linux then the range of "distributions" available can be confusing - but the latest LTS ("Long Term Support") version of Ubuntu Server is a popular choice, and what you'll need for this course. 
  
-These instruction will walk you through using Digital Ocean (http://digitalocean.com) as your VPS hosting provider. They are rated highly, with a very simple and slick interface - and low cost of $5 (USD) per month for the minimal server that you'll be creating. (Of course, if you have a strong reason to use another provider, then by all means do so, but be sure to choose Ubuntu Server 18.04)
+These instruction will walk you through using Digital Ocean (http://digitalocean.com) as your VPS hosting provider. They are rated highly, with a very simple and slick interface - and low cost of $5 (USD) per month for the minimal server that you'll be creating. (Of course, if you have a strong reason to use another provider, then by all means do so, but be sure to choose Ubuntu Server 20.04)
 
 ## Signing up with Digital Ocean
 
 Signup is immediate - just provide your email address and a password of your choosing and you're in!
 
 * Choose "Manage, Droplets" from the left hand sidebar. (a "droplet" is Digital Ocean's cute name for a server!)
-* Select the image "Ubuntu 18.04 LTS" or "Ubuntu 20.04 LTS"
+* Select the image "Ubuntu 20.04 LTS"
 * For plan, choose "Starter"
 * You'll be prompted to start a $40/m plan, but select "Show all plans", and select the $5/mo one - that's fine for this course.
 * You don't need to add any block storage.
@@ -33,9 +33,11 @@ Select your droplet and "Access" from the left hand sidebar and you should be ab
 
 We want to follow the Best Practice of not logging as "root" remotely, so we'll create an ordinary user account, but one with the power to "become root" as necessary, like this:
 
-    adduser snori74
-    usermod -a -G adm snori74
-    usermod -a -G sudo snori74
+`adduser snori74`
+
+`usermod -a -G adm snori74`
+
+`usermod -a -G sudo snori74`
 
 (Of course, replace 'snori74' with your name!) 
 
@@ -45,13 +47,13 @@ We want to follow the Best Practice of not logging as "root" remotely, so we'll 
 
 Logout as *root*, by typing logout or *exit*, then login as your new sysadmin user, and confirm that you can do administrative tasks by typing:
 
-    sudo apt update
+`sudo apt update`
 
 (you'll be asked to confirm your password)
 
 Then:
 
-    sudo apt upgrade
+`sudo apt upgrade`
 
 Don't worry too much about the output and messages from these commands, but it should be clear whether they succeeded or not. These commands are how you force the installation of updates on an Ubuntu Linux system, and only an administrator can do them.
 
@@ -59,7 +61,7 @@ Don't worry too much about the output and messages from these commands, but it s
 
 With our new working user able to perform all sysadmin tasks, there is no reason for us to login user *root*. Our server is exposed to all of the internet, and we can expect continuous attempts to login from malicious bots - most of which will be attempting to login as *root*. While we did set a very secure password just before, it would be nice to know that remote login as *root* is actually *impossible* - and it's possible to do that with this command:
 
-    sudo usermod -p "!" root
+`sudo usermod -p "!" root`
     
 This disables direct login access, while still allowing approved logged in users to "become root' as necessary - and is the normal default configuration of an Ubuntu system. (Digital Ocean's choice to enable "root" in their image is non-standard).  
 
