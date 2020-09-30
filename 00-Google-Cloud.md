@@ -1,5 +1,7 @@
 # Day 0 - Creating Your Own Server - with Google Cloud Platform Free Tier
 
+_(DRAFT: Use this as a guide, but it has not been fully tested. Please let us know of any issue with it)_ 
+
 ## INTRO
 First, you need a server. You can't really learn about administering a remote Linux server without having a one of your own - so today we're going get one - completly free!
 
