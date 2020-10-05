@@ -36,4 +36,4 @@ Expect to spend 1-2 hours going through each. Some find it handy to read the not
 Feel free to post questions or comments here in the subreddit – or chat using the Discord server (https://discordapp.com/invite/wd4Zqyk) run by u/cobaltrune.
 
 ## Patreon?
-No, but there are [a number of ways you can support and show your appreciation](https://www.blogger.com/blog/post/edit/10221325/4292551569536709034).
+No, but there are [a number of ways you can support and show your appreciation](http://snori74.blogspot.com/2020/09/how-can-you-support-linuxupskillchallen.html).
