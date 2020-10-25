@@ -4,7 +4,7 @@
 * [Monthly "Linux Upskill Challenge"](https://www.reddit.com/r/linuxupskillchallenge/)
 * [Lesson "source"](https://github.com/snori74/linuxupskillchallenge) 
 * [Chat with Discord](https://discordapp.com/invite/wd4Zqyk)
-* [Testimonials](https://www.reddit.com/r/linuxupskillchallenge/comments/j3g2s0/thoughts_and_comments_day_20/)
+* [Recent feedback from "students"](https://www.reddit.com/r/linuxupskillchallenge/comments/j3g2s0/thoughts_and_comments_day_20/)
 
 
 ## You'll need to setup a cloud-based server
