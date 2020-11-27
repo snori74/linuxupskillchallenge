@@ -2,7 +2,8 @@
 
 * [Website of the course](https://LinuxUpskillChallenge.org)
 * [Monthly "Linux Upskill Challenge"](https://www.reddit.com/r/linuxupskillchallenge/)
-* [Lesson "source"](https://github.com/snori74/linuxupskillchallenge) 
+* [Overview of the course content](https://github.com/snori74/linuxupskillchallenge/blob/master/TOC.md)
+* [Full lesson "source"](https://github.com/snori74/linuxupskillchallenge) 
 * [Chat with Discord](https://discordapp.com/invite/wd4Zqyk)
 * [Recent feedback...](https://www.reddit.com/r/linuxupskillchallenge/comments/j3g2s0/thoughts_and_comments_day_20/)
 
