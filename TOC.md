@@ -14,7 +14,7 @@ Working with `sudo`, `uptime`, `timezones`, changing your hostname
 Usinging 'apt' to find and install sotware. Use of `mc` to explore the filesystem. Looking at the contents of: `/etc/passwd`, `/etc/ssh/sshd_config` and `/var/log/auth.log`
 
 ## Day 5
-Using `more`, `less` and navigationg in these. Dotfiles, history, tab completion, and using the `nano` txt editor
+Using `more`, `less` and navigating in these. Dotfiles, history, tab completion, and using the `nano` txt editor
 
 ## Day 6
 Learning `vim`, the minimal knowledge, but also via `vimtutor`
