@@ -1,4 +1,4 @@
-##Day 1
+## Day 1
 ssh-n in, an som e simle commands: ls
 
 uptime
@@ -13,7 +13,7 @@ extensyions on doing passwordless oloing wit public keys and an ssh config file
 
 
 
-##Day 2
+## Day 2
 - Basic navigation, the "man" pages, file heiracy
 
 ##Day 3 
