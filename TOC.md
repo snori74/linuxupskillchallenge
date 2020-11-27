@@ -26,7 +26,7 @@ Installing Apache2, stopping and starting, altering the content, reading logs
 Hands-on with text tools like `grep`, `cat`, `more`, `less`, `cut`, `awk` and `tail` - and piping of course. (and a wave to `awk` and `sed`) 
  
  ## Day 9 
-Firewalling etc. starting with `ss`, and a nod to `netstat`, install `nmap` and test. Install `ufw`, set up, enable and test etc. Discuss security resonsibilities as the sysadmin.
+Looking at open ports with with `ss`, and a nod to `netstat`, install `nmap` and test. Install `ufw`, set up, enable and test etc. Discuss security resonsibilities as the sysadmin.
  
  ## Day 10
  Covering `cron`, `at`, and systemd timers
