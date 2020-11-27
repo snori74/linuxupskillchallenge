@@ -1,4 +1,4 @@
-# Overview of the Linux UpskillChallenge
+# Overview of the Linux Upskill Challenge
 
 ## Day 1 
 
@@ -60,4 +60,4 @@ Log management and rotation, `logrotate`
 Inodes, hard links symlinks and `stat`
  
  ## Day 20
- A couple of simple scripts based on the filtering of logs we've been doing. Resources to explore further.
+Understanding how scrpting work in Linux, the shebang, permissons and $PATH. A couple of simple sample scripts based on the filtering of logs we've been doing. Resources to explore further.
