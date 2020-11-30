@@ -10,6 +10,7 @@
 
 ## You'll need to setup a cloud-based server
 
+
 Do I *really* need a cloud-based server?
 
 Yes, if you’re in the target audience (see below) you definitely should. The fact that such a server is very remote, and open to attack from the whole Internet, “makes it real”. Learning how to setup such a VPS is also a handy skill for any sysadmin. 
