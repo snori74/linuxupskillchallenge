@@ -60,4 +60,4 @@ Log management and rotation, `logrotate`
 Inodes, hard links symlinks and `stat`
  
  ## Day 20
-Understanding how scrpting work in Linux, the shebang, permissons and $PATH. A couple of simple sample scripts based on the filtering of logs we've been doing. Resources to explore further.
+Understanding how scripting work in Linux, the shebang, permissons and $PATH. A couple of simple sample scripts based on the filtering of logs we've been doing. Resources to explore further.
