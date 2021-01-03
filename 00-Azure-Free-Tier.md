@@ -1,4 +1,4 @@
-# Day 0 - Creating Your Own Server - with AWS Free Tier
+# Day 0 - Creating Your Own Server - with Azure Free Credits
 
 ## INTRO
 First, you need a server. You can't really learn about administering a remote Linux server without having a one of your own - so today we're going get one - completly free!
@@ -7,7 +7,7 @@ Through the magic of Linux and virtualisation, it's now possible to get a small 
 
 As well as a hosting provider, we also need to choose which "flavour" of Linux to install on our server. If you're new to Linux then the range of "distributions" available can be confusing - but the latest LTS ("Long Term Support") version of Ubuntu Server is a popular choice, and what you'll need for this course. 
  
-These instructions will walk you through using Azure's free signup credits 
+These instructions will walk you through using Azure's free credits 
 
 ## Signing up with Azure
 Signup is fairly simple - just provide your email address and a password of your choosing - along with a phone number for a 2FA - a second method of authentication. Azure can be a bit funny about 'corporate' email addresses, eg using a work address or your own domain. Create a new @outlook or @gmail.com account if so using the link on the signup page.
