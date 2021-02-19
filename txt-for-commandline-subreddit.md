@@ -1,6 +1,6 @@
 TITLE: Free Linux commandline "upskill" course starting shortly...
 
-This free month-long course is re-starting again on the first Monday of next month - i.e. 7 December 2020
+This free month-long course is re-starting again on the first Monday of next month.
 
 Daily lessons appear in the sub-reddit r/linuxupskillchallenge - which is also used for support/discussion.
 
