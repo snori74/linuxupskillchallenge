@@ -1,10 +1,7 @@
 **HISTORICAL INTEREST ONLY**
 
 **Livia's fork at https://github.com/livialima/linuxupskillchallenge is now where the action happens.**
-
-
-
-
+***
 
 
 *Introduction to Linux Server Administration!*
